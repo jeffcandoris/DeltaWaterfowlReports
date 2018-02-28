@@ -30,7 +30,7 @@
         <value>1</value>
     </params>
     <reportType>Opps_with_Payments_Stacy_s_Custom__c</reportType>
-    <roleHierarchyFilter>Employee</roleHierarchyFilter>
+    <roleHierarchyFilter>System_Administrator</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <sortColumn>Opportunity$StageName</sortColumn>

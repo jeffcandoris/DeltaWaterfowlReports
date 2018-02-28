@@ -39,7 +39,7 @@
         <value>1</value>
     </params>
     <reportType>Opportunities_with_GAU_Allocations__c</reportType>
-    <roleHierarchyFilter>Employee</roleHierarchyFilter>
+    <roleHierarchyFilter>System_Administrator</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
