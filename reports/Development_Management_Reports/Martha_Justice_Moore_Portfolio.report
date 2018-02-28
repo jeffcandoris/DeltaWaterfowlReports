@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account$BillingAddress</field>
+    </columns>
+    <columns>
+        <field>Account$Primary_Contact_Phone__c</field>
+    </columns>
+    <columns>
+        <field>Account$Primary_Contact_Email__c</field>
+    </columns>
+    <columns>
+        <field>Account$npo02__TotalOppAmount__c</field>
+    </columns>
+    <columns>
+        <field>Account$Owner</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Full List of Accounts Assigned to M. J. Moore - 27 Nov 2017</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$Owner</column>
+            <operator>contains</operator>
+            <value>moore</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Martha Justice Moore Portfolio</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

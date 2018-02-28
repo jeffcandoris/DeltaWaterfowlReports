@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.CampaignMembers$Name</field>
+    </columns>
+    <currency>USD</currency>
+    <description>The original one isn&apos;t working correctly - see notes in directions</description>
+    <filter>
+        <booleanFilter>(1 AND 2) OR (3 AND 4) OR (5 AND 6)</booleanFilter>
+        <criteriaItems>
+            <column>Contact.CampaignMembers$Name</column>
+            <operator>equals</operator>
+            <value>TR,TR09,TRK100D,TRK100E,TRK250D,TRK250E,TRK25D,TRK500D,TRK500E,TRKPST,TRKPSTL,TRKN,TRK100EL,TRK250EL,TRK500EL,TRK50E,TRK50EL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.CampaignMembers$HasResponded</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.CampaignMembers$Name</column>
+            <operator>equals</operator>
+            <value>TRK25E,TRKPC100D,TRKPC100E,TRKPC250D,TRKPC250E,TRKPC25D,TRKPC25D1,TRKPC25E1,TRKPC25E2,TRKPC25E3,TRKPC25E4,TRKPC500D,TRKPC500E,TRKPC50D,TRKPC50E,TRKPCN,TRKPCPSTD,TRKPCPSTE,MEM-RFT-TRK100D,MEM-RFT-TRK100E,MEM-RFT-TRK250D,MEM-RFT-TRK250E,MEM-RFT-TRK30D</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.CampaignMembers$HasResponded</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.CampaignMembers$Name</column>
+            <operator>equals</operator>
+            <value>MEM-RFT-TRK30E1,MEM-RFT-TRK30E2,MEM-RFT-TRK500D,MEM-RFT-TRK50D,MEM-RFT-TRK50E,MEM-RFT-TRKN,MEM-RFT-TRKPC100D,MEM-RFT-TRKPC250D,MEM-RFT-TRKPC25D,MEM-RFT-TRKPC25D1,MEM-RFT-TRKPC500D,MEM-RFT-TRKPC50D,MEM-RFT-TRKPCE1,MEM-RFT-TRKPCE2,MEM-RFT-TRKPCE3,MEM-RFT-TRKPCE4,MEM-RFT-TRKPCN,MEM-RFT-TRKPCPSTD,MEM-TRK-TRKPCPSTE,MEM-RFT-TRKPST,MEM-RFT-Unknown,MEM-RFT-TRK500E,MEM-RFT-TRKPC50E,MEM-RFT-TRKPC100E,MEM-RFT-TRKPC250E,MEM-RFT-TRKPC500E</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.CampaignMembers$HasResponded</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Test - Past Truck Raffle Buyers</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Campaign_History__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

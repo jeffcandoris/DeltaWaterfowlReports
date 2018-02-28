@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c.Membership_ID__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Amount</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CloseDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c.MailingPostalCode</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Campaign</column>
+            <operator>contains</operator>
+            <value>mem-gen-bro,mem-gen-mail,mem-gen-onlne,mem-gen-phone</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Member Unknown</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_Primary_Campaign_Fields__c</reportType>
+    <roleHierarchyFilter>Employee</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Opportunity$CloseDate</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <endDate>2018-02-24</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-08-13</startDate>
+    </timeFrameFilter>
+</Report>

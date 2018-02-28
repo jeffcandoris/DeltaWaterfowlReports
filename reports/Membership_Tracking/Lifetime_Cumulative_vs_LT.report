@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Membership_ID__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$LastName</field>
+    </columns>
+    <columns>
+        <field>Contact$FirstName</field>
+    </columns>
+    <columns>
+        <field>Contact.Constituent_Codes__r$Long_Code__c</field>
+    </columns>
+    <columns>
+        <field>Contact$npo02__LastMembershipDate__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Constituent_Codes__r$Date_From__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Constituent_Codes__r$LastModifiedDate</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 or 2</booleanFilter>
+        <criteriaItems>
+            <column>Contact.Constituent_Codes__r$Long_Code__c</column>
+            <operator>contains</operator>
+            <value>lifetime member</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Constituent_Codes__r$Long_Code__c</column>
+            <operator>contains</operator>
+            <value>cumulative lifetime</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Lifetime Cumulative vs LT</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Constituent_Codes__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact$LastName</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

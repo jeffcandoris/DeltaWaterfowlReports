@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Campaign</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Amount</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CloseDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c.Membership_ID__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Campaign</column>
+            <operator>contains</operator>
+            <value>41202 - 2018 M1,41203 - 2018 M2,Ducks-Unknown</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Ducks Analysis - 2018</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_Primary_Campaign_Fields__c</reportType>
+    <roleHierarchyFilter>Employee</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <endDate>2018-03-24</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-03-18</startDate>
+    </timeFrameFilter>
+</Report>

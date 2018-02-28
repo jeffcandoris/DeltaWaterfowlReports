@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Attributes__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Attributes__r$Category__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Attributes__r$Value__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Attributes__r$Comment__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Attributes__r$Date__c</field>
+    </columns>
+    <columns>
+        <field>Account$Last_Payment_Date_all_stages__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Attributes__r$Account__c</field>
+    </columns>
+    <columns>
+        <field>Account$npo02__MembershipEndDate__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Attributes__r$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$npo02__MembershipEndDate__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Used to clean up comp list</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contacts.Attributes__r$Name</column>
+            <operator>contains</operator>
+            <value>comp list</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Comp List Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Contacts_with_Attributes__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account.Contacts$npo02__MembershipEndDate__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

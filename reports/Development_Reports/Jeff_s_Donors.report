@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>MEMBER_NAME</field>
+    </columns>
+    <columns>
+        <field>MEMBER_ROLE</field>
+    </columns>
+    <columns>
+        <field>PHONE1</field>
+    </columns>
+    <columns>
+        <field>Account.npo02__Formal_Greeting__c</field>
+    </columns>
+    <columns>
+        <field>Account.npo02__Informal_Greeting__c</field>
+    </columns>
+    <columns>
+        <field>Account.npo02__OppAmountThisYear__c</field>
+    </columns>
+    <columns>
+        <field>Account.Primary_Contact_Phone__c</field>
+    </columns>
+    <columns>
+        <field>Account.Primary_Contact_Email__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>MEMBER_ROLE</column>
+            <operator>equals</operator>
+            <value>Account Manager,Major gifts solicitor,Assigned Solicitor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_NAME</column>
+            <operator>equals</operator>
+            <value>jeffrey howell</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.npo02__OppAmountLastYear__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Jeff&apos;s Donors</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountTeam</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

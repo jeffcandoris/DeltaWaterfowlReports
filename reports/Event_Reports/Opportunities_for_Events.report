@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c.FirstName</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c.LastName</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c.MailingStreet</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c.MailingCity</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c.MailingState</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c.MailingPostalCode</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c.Email</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c.Phone</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Campaign.RecordType</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Campaign.Description</field>
+    </columns>
+    <currency>USD</currency>
+    <description>0.00 membership amounts - committee red cards</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity$RecordType</column>
+            <operator>equals</operator>
+            <value>Opportunity.Membership</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Amount</column>
+            <operator>equals</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$npsp__Primary_Contact__c.MailingState</column>
+            <operator>equals</operator>
+            <value>MI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$npsp__Primary_Contact__c.MailingState</column>
+            <operator>equals</operator>
+            <value>OH</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Opportunities for Events - Test</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_Primary_Campaign_Fields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <endDate>2017-06-12</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-01-01</startDate>
+    </timeFrameFilter>
+</Report>

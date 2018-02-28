@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c.Membership_ID__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account.npo02__Formal_Greeting__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account.npo02__Informal_Greeting__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Letter_Code__c</column>
+            <operator>contains</operator>
+            <value>Ducks,Hunters Letter,Sportsman’s Raffle,Spring Raffle,Truck Raffle,Year End</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$npsp__Primary_Contact__c.npsp__Deceased__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$npsp__Primary_Contact__c.HasOptedOutOfEmail</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$npsp__Primary_Contact__c.No_Valid_Address__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Year End Testing3</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_Primary_Campaign_Fields__c</reportType>
+    <roleHierarchyFilter>Employee</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <endDate>2016-11-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-08-01</startDate>
+    </timeFrameFilter>
+</Report>

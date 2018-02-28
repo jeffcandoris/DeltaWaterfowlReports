@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Contacts$Owner</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Total_Gross_Payment_Units__c</field>
+    </columns>
+    <columns>
+        <field>Account$npe01__One2OneContact__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account$BillingAddress</field>
+    </columns>
+    <columns>
+        <field>Account$Primary_Contact_Phone__c</field>
+    </columns>
+    <columns>
+        <field>Account$Primary_Contact_Email__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All accounts assigned to account owner</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$Owner</column>
+            <operator>contains</operator>
+            <value>petrie,tharpe,devney,rohwer,brice,chouinard,fisher,davis,howell,presley,mcguigan,moore</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Individual Dash All Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Contacts_with_Opportunities__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account$Total_Gross_Payment_Units__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

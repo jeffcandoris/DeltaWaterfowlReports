@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Owner</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.OpportunityContactRoles$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.OpportunityContactRoles$CloseDate</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Contacts.OpportunityContactRoles*Opportunity$Gross_Dollar_Units__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.OpportunityContactRoles*Opportunity$Expected_Revenue_Units__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.OpportunityContactRoles$StageName</field>
+    </columns>
+    <currency>USD</currency>
+    <description>A report of all open opportunities, by individual, grouped by gift type and sorted by planned close date</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contacts.OpportunityContactRoles$StageName</column>
+            <operator>notContain</operator>
+            <value>Closed Won - 100%,Closed Receivable - Closed/Won - 100%</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Contacts.OpportunityContactRoles$Type</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Ind All Open Opps By Close Date</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Contacts_with_Opportunities__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Contacts.OpportunityContactRoles$CloseDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

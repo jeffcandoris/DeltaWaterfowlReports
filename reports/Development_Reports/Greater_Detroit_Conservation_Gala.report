@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Contacts$Membership_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$npo02__Formal_Greeting__c</field>
+    </columns>
+    <columns>
+        <field>Account$npo02__Informal_Greeting__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$MailingCity</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$MailingState</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.npsp__Opportunities__r$npe01__Payments_Made__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.npsp__Opportunities__r$Department__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contacts.npsp__Opportunities__r$Campaign</column>
+            <operator>equals</operator>
+            <value>greater detroit conservation gala</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Greater Detroit Conservation Gala</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Contacts_with_Opportunities_and_Payment__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

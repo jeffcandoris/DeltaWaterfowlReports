@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npe01__Contact_Id_for_Role__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity.npsp__Allocations__r$npsp__General_Accounting_Unit__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.npsp__Allocations__r$npsp__Amount__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Campaign</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CloseDate</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Campaign</column>
+            <operator>contains</operator>
+            <value>2017 Hunter Mailing</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Hunters Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_GAU_Allocations__c</reportType>
+    <roleHierarchyFilter>Employee</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <endDate>2018-02-28</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-10-06</startDate>
+    </timeFrameFilter>
+</Report>

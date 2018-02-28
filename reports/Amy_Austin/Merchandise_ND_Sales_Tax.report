@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Contacts$Membership_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$npsp__Current_Address__c.npsp__MailingStreet__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$npsp__Current_Address__c.npsp__MailingStreet2__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$MailingCity</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$MailingState</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$MailingPostalCode</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Contacts.npsp__Opportunities__r$Amount</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.npsp__Opportunities__r$Name</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Report ND merchandise sales tax from the Delta Store to Tim.</description>
+    <filter>
+        <booleanFilter>(1 or 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <column>Account.Contacts.npsp__Opportunities__r$RecordType</column>
+            <operator>equals</operator>
+            <value>Opportunity.Merchandise</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.npsp__Opportunities__r$Name</column>
+            <operator>contains</operator>
+            <value>merchandise</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts$MailingState</column>
+            <operator>equals</operator>
+            <value>nd</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Merchandise ND Sales Tax</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Contacts_with_Opportunities_and_Payment__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Contacts.npsp__Opportunities__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_PREVQ</interval>
+    </timeFrameFilter>
+</Report>

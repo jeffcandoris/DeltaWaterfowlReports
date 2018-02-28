@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Attributes__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Attributes__r$Value__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Attributes__r$Comment__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Attributes__r$Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Attributes__r$Category__c</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>Name</column>
+            <operator>contains</operator>
+            <value>Comp list</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>Account.Contacts$Id</primaryTableColumn>
+        <relatedTable>Attribute__c</relatedTable>
+        <relatedTableJoinColumn>Contact__c</relatedTableJoinColumn>
+    </crossFilters>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>Comp List Pull - Yearly Review</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Contacts_with_Attributes__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

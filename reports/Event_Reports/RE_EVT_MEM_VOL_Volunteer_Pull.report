@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Attributes__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Email</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account$npo02__LastMembershipOrigin__c</column>
+            <operator>equals</operator>
+            <value>EVT-MEM-VOL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.Attributes__r$Name</column>
+            <operator>equals</operator>
+            <value>Volunteer - Current</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>RE EVT-MEM-VOL Volunteer Pull</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Contacts_with_Attributes__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>Constituent_Code__c.Contact__c</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Constituent_Code__c$Contact__c.Membership_ID__c</field>
+        </columns>
+        <columns>
+            <field>Constituent_Code__c$Contact__c.Account</field>
+        </columns>
+        <columns>
+            <field>Constituent_Code__c$Long_Code__c</field>
+        </columns>
+        <columns>
+            <field>Constituent_Code__c$Contact__c.MailingState</field>
+        </columns>
+        <columns>
+            <field>Constituent_Code__c$Contact__c.Owner</field>
+        </columns>
+        <currency>USD</currency>
+        <filter>
+            <criteriaItems>
+                <column>Constituent_Code__c$Long_Code__c</column>
+                <operator>equals</operator>
+                <value>Cumulative Lifetime Member,Lifetime Member</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Constituent Codes block 1</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Constituent_Codes__c</reportType>
+        <scope>organization</scope>
+        <sortColumn>Constituent_Code__c$Long_Code__c</sortColumn>
+        <sortOrder>Asc</sortOrder>
+        <timeFrameFilter>
+            <dateColumn>Constituent_Code__c$CreatedDate</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>Contact</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Contact.OpportunityContactRoles$Name</field>
+        </columns>
+        <columns>
+            <field>Contact.OpportunityContactRoles$StageName</field>
+        </columns>
+        <currency>USD</currency>
+        <filter>
+            <criteriaItems>
+                <column>Contact.OpportunityContactRoles$Name</column>
+                <operator>contains</operator>
+                <value>lifetime</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Contacts with Opps and Payments block 2</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Contacts_with_Opps_and_Payments__c</reportType>
+        <scope>organization</scope>
+        <sortColumn>Contact.OpportunityContactRoles$StageName</sortColumn>
+        <sortOrder>Asc</sortOrder>
+        <timeFrameFilter>
+            <dateColumn>Contact.OpportunityContactRoles$CloseDate</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>Constituent_Code__c.Contact__c</joinTable>
+    </blockInfo>
+    <description>Identifies cumulative lifetime members and lifetime members by constituent code.  Also shows the stage of the LT opportunity.</description>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Constituent_Code__c$Contact__c.Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cumulative LT vs Lifetime w/Opp Stage</name>
+    <reportType>Constituent_Codes__c</reportType>
+    <showDetails>true</showDetails>
+</Report>
