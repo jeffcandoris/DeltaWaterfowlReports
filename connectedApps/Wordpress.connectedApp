@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>ishoemaker@candoris.com</contactEmail>
+    <label>myDelta</label>
+    <oauthConfig>
+        <callbackUrl>https://deltawaterfowl.auth0.com/login/callback</callbackUrl>
+        <consumerKey>3MVG9uudbyLbNPZM1tZRCc0duKTPNKckzD9gYcPVNGf.etGjgywQz32rQps2IDO4k9Bly.lJLJXWaqouBqlkw</consumerKey>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>Chatter</scopes>
+        <scopes>CustomApplications</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+        <scopes>CustomPermissions</scopes>
+    </oauthConfig>
+</ConnectedApp>

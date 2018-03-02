@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <label><!-- Committee --></label>
+        <name>committee__c</name>
+        <relationshipLabel><!-- Committee Members --></relationshipLabel>
+    </fields><fields>
+        <label><!-- Contact --></label>
+        <name>contact__c</name>
+        <relationshipLabel><!-- Committee Memberships --></relationshipLabel>
+    </fields><fields>
+        <label><!-- End Date --></label>
+        <name>enddate__c</name>
+    </fields><fields>
+        <label><!-- Organization Representing --></label>
+        <name>organizationrepresenting__c</name>
+        <relationshipLabel><!-- Committee Representation --></relationshipLabel>
+    </fields><fields>
+        <label><!-- Role --></label>
+        <name>role__c</name>
+        <picklistValues>
+            <masterLabel>Chairperson</masterLabel>
+            <translation><!-- Chairperson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation><!-- General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secretary</masterLabel>
+            <translation><!-- Secretary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasurer</masterLabel>
+            <translation><!-- Treasurer --></translation>
+        </picklistValues>
+    </fields><fields>
+        <label><!-- Start Date --></label>
+        <name>startdate__c</name>
+    </fields><fields>
+        <label><!-- Status --></label>
+        <name>status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields><fields>
+        <label><!-- Voting Member --></label>
+        <name>votingmember__c</name>
+    </fields><caseValues>
+        <plural>false</plural>
+        <value>Committee Member</value>
+    </caseValues><caseValues>
+        <plural>true</plural>
+        <value>Committee Members</value>
+    </caseValues><startsWith>Consonant</startsWith></CustomObjectTranslation>

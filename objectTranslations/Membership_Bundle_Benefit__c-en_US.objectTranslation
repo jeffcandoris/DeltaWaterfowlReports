@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <label><!-- Benefit Count --></label>
+        <name>Benefit_Count__c</name>
+    </fields><fields>
+        <label><!-- Benefit Name --></label>
+        <name>Benefit_Name__c</name>
+    </fields><fields>
+        <label><!-- Benefit --></label>
+        <name>Benefit__c</name>
+        <relationshipLabel><!-- Membership Bundle Benefits --></relationshipLabel>
+    </fields><fields>
+        <label><!-- Membership Bundle --></label>
+        <name>Membership_Bundle__c</name>
+        <relationshipLabel><!-- Membership Bundle Benefits --></relationshipLabel>
+    </fields><caseValues>
+        <plural>false</plural>
+        <value>Membership Bundle Benefit</value>
+    </caseValues><caseValues>
+        <plural>true</plural>
+        <value>Membership Bundle Benefits</value>
+    </caseValues><startsWith>Consonant</startsWith><layouts>
+        <layout>Membership Bundle Benefit Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts></CustomObjectTranslation>

@@ -1,0 +1,99 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" docType="html-5.0" controller="EventsController">
+  <html>
+    <head>
+      <meta charset="utf-8"></meta>
+      <title>Events</title>
+      <meta name="viewport" content="width=device-width"></meta>
+
+      <link rel="stylesheet" href="{!URLFOR($Resource.font_awesome, '/font_awesome/css/font-awesome.min.css')}"></link>
+      <link rel="stylesheet" href="{!URLFOR($Resource.angular_material, 'angular-material.min.css')}"></link>
+      <link rel="stylesheet" href="{!URLFOR($Resource.material_calendar, 'angular-material-calendar.min.css')}"></link>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+
+      <script src="{!URLFOR($Resource.jquery)}"></script>
+      <script src="{!URLFOR($Resource.angularjs)}"></script>
+      <script src="{!URLFOR($Resource.angular_animate)}"></script>
+      <script src="{!URLFOR($Resource.angular_aria)}"></script>
+      <script src="{!URLFOR($Resource.angular_messages)}"></script>
+      <script src="{!URLFOR($Resource.angular_sanitize)}"></script>
+      <script src="{!URLFOR($Resource.angular_material, 'angular-material.min.js')}"></script>
+      <script src="{!URLFOR($Resource.material_calendar, 'angular-material-calendar.min.js')}"></script>
+      <script src="{!URLFOR($Resource.momentjs)}"></script>
+
+      <!-- START CALENDAR.RESOURCE -->
+      <link rel="stylesheet" href="{!URLFOR($Resource.calendar, '/calendar/css/calendar.css')}"></link>
+      <script src="{!URLFOR($Resource.calendar, '/calendar/js/calendar.js')}"></script>
+      <!-- END CALENDAR.RESOURCE -->
+
+      <style>
+        md-option ._md-text {
+          overflow: initial;
+        }
+      </style>
+
+    </head>
+
+    <script type="text/javascript">
+      window.EVENT_APP = {
+        vfRemoting: {
+          getEvents: "{!$RemoteAction.EventsController.getEvents}"
+        }
+      };
+    </script>
+
+    <div ng-app="calendarApp">
+      <div ng-controller="calendarCtrl">
+        <div class="calendar-filters">
+          <md-input-container>
+            <label>State / Province</label>
+            <md-select ng-model="stateValue" ng-change="filterChange()">
+              <md-option ng-value="">
+                <em>None</em>
+              </md-option>
+              <md-option ng-repeat="state in states">
+                {{state}}
+              </md-option>
+            </md-select>
+          </md-input-container>
+          <md-input-container>
+            <label>Month</label>
+            <md-select ng-model="startMonth" ng-change="filterChange()">
+              <md-option>
+                <em>None</em>
+              </md-option>
+              <md-option ng-repeat="month in months" ng-value="month.value">
+                {{month.text}}
+              </md-option>
+            </md-select>
+          </md-input-container>
+        </div>
+        <div ng-switch="loadingSwitch" class="row">
+          <div ng-switch-when="loading">
+            <div class="container" style="text-align: center; margin: 40px; padding: 40px;">
+              <md-progress-linear md-mode="indeterminate"></md-progress-linear>
+            </div>
+          </div>
+          <div class="col s12 m12 l10" ng-switch-when="finished">
+            <calendar-md
+              flex="true"
+              layout="true"
+              layout-fill="true"
+              calendar-direction="direction"
+              on-prev-month="monthChange"
+              on-next-month="monthChange"
+              title-format="'MMMM y'"
+              ng-model='selectedDate'
+              day-format="'d'"
+              day-label-format="'EEE'"
+              day-label-tooltip-format="'EEEE'"
+              day-tooltip-format="'fullDate'"
+              data-start-month="{{startMonth}}"
+              data-start-year="{{startYear}}"
+              week-starts-on="firstDayOfWeek"
+              day-content="setDayContent"></calendar-md>
+          </div>
+        </div>
+      </div>
+    </div>
+  </html>
+</apex:page>

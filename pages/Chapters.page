@@ -1,0 +1,203 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" docType="html-5.0" controller="ChapterController">
+  <html>
+    <head>
+      <meta charset="utf-8"></meta>
+      <title>Events</title>
+      <meta name="viewport" content="width=device-width"></meta>
+
+      <link rel="stylesheet" href="{!URLFOR($Resource.font_awesome, '/font_awesome/css/font-awesome.min.css')}"></link>
+      <!-- <link rel="stylesheet" href="{!URLFOR($Resource.angular_material, 'angular-material.min.css')}"></link> -->
+      <!-- <link rel="stylesheet" href="{!URLFOR($Resource.material_calendar, 'angular-material-calendar.min.css')}"></link> -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+
+      <script src="{!URLFOR($Resource.jquery)}"></script>
+      <!-- <script src="{!URLFOR($Resource.angularjs)}"></script> -->
+      <!-- <script src="{!URLFOR($Resource.angular_animate)}"></script> -->
+      <!-- <script src="{!URLFOR($Resource.angular_aria)}"></script> -->
+      <!-- <script src="{!URLFOR($Resource.angular_messages)}"></script> -->
+      <!-- <script src="{!URLFOR($Resource.angular_sanitize)}"></script> -->
+      <!-- <script src="{!URLFOR($Resource.angular_material, 'angular-material.min.js')}"></script> -->
+      <!-- <script src="{!URLFOR($Resource.material_calendar, 'angular-material-calendar.min.js')}"></script> -->
+      <script src="{!URLFOR($Resource.momentjs)}"></script>
+
+      <!-- START OPENLAYERS.RESOURCE -->
+      <link rel="stylesheet" href="{!URLFOR($Resource.openlayers, '/includes/ol.css')}"></link>
+      <script src="{!URLFOR($Resource.openlayers, '/includes/ol.js')}"></script>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <!-- END OPENLAYERS.RESOURCE -->
+
+      <title>Icon Symbolizer</title>
+      <style>
+        html, body {
+          height: 100%;
+        }
+        .map {
+          height: 100%;
+          position: relative;
+        }
+
+      </style>
+    </head>
+    <body>
+      <div id="map" class="map">
+        <div id="popup"></div>
+      </div>
+      <script type="text/javascript">
+        window.CHAP_APP = {
+          vfRemoting: {
+            getChapters: "{!$RemoteAction.ChapterController.getChapters}",
+          }
+        };
+      </script>
+      <script>
+
+      function buildFeatures(chapters) {
+        var style = new ol.style.Style({
+          image: new ol.style.Icon(({
+            anchor: [
+              0, 0
+            ],
+            anchorXUnits: 'fraction',
+            anchorYUnits: 'pixels',
+            src: '/resource/blueducklogo',
+            scale: .5
+          }))
+        });
+        var chapterFeatures = [];
+        for (var i = 0; i < chapters.length; i++) {
+          if (chapters[i].BillingLatitude != null && chapters[i].BillingLongitude) {
+            var chapterFeature = new ol.Feature({
+              geometry: new ol.geom.Point(ol.proj.transform([chapters[i].BillingLongitude,chapters[i].BillingLatitude], 'EPSG:4326', 'EPSG:3857')),
+              name: chapters[i].Name,
+              regionalDirector: (!chapters[i].Regional_Director__r) ? 'N/A' : chapters[i].Regional_Director__r.Name,
+              chapterNumber: (!chapters[i].Chapter_Number__c) ? 'N/A' : chapters[i].Chapter_Number__c,
+              website: chapters[i].Website,
+              facebookPage: chapters[i].Facebook_Page__c,
+              street: chapters[i].BillingStreet,
+              city: chapters[i].BillingCity,
+              state: chapters[i].BillingState,
+              zipCode: chapters[i].BillingPostalCode,
+              country: chapters[i].BillingCountry
+            });
+            chapterFeature.setStyle(style);
+            chapterFeatures.push(chapterFeature);
+          }
+        }
+        return chapterFeatures;
+      }
+
+      function initMap(features) {
+        var vectorSource = new ol.source.Vector({features: features});
+
+        var vectorLayer = new ol.layer.Vector({source: vectorSource});
+
+        var rasterLayer = new ol.layer.Tile({
+          source: new ol.source.OSM()
+        });
+
+        var map = new ol.Map({
+          layers: [
+            rasterLayer, vectorLayer
+          ],
+          target: document.getElementById('map'),
+          view: new ol.View({
+            center: ol.proj.transform([-98.5785, 39.8282], 'EPSG:4326', 'EPSG:3857'),
+            zoom: 4.5
+          })
+        });
+
+        function buildPopoverContent(feature) {
+          var popoverContent = '<p>';
+          if (feature.get('street')) {
+            popoverContent += feature.get('street') + '</br>';
+          }
+          if (feature.get('city')) {
+            popoverContent += feature.get('city') + ', ';
+          }
+          if (feature.get('state')) {
+            popoverContent += feature.get('state') + ' ';
+          }
+          if (feature.get('zipCode')) {
+            popoverContent += feature.get('zipCode') + '</br>';
+          }
+          if (feature.get('country')) {
+            popoverContent += feature.get('country') + '</br>';
+          }
+
+          popoverContent +=  ' Regional Director: ' + feature.get('regionalDirector') + '</br>';
+          popoverContent += ' Chapter Number: ' + feature.get('chapterNumber') + '</br>';
+
+          if (feature.get('website')) {
+            popoverContent += ' <a href=http://' + feature.get('website') + '>Website</a>' + '</br>';
+          }
+
+          if (feature.get('facebookPage')) {
+            popoverContent += ' <a href=http://' + feature.get('facebookPage') + '>Facebook</a></p>';
+          }
+
+          return popoverContent;
+        }
+
+
+        var element = document.getElementById('popup');
+
+        var popup = new ol.Overlay({
+          element: element,
+          positioning: 'top-center',
+          stopEvent: false,
+          offset: [10, -10]
+        });
+        map.addOverlay(popup);
+
+        // display popup on click
+        map.on('click', function (evt) {
+          $(element).popover('destroy');
+          map.forEachFeatureAtPixel(evt.pixel, function (feature) {
+            if (feature) {
+              var coordinates = feature.getGeometry().getCoordinates();
+              popup.setPosition(coordinates);
+              $(element).popover({
+                'placement': 'auto top',
+                'animation': false,
+                'title': feature.get('name'),
+                'html': true,
+                'content': buildPopoverContent(feature),
+                'container': 'body'
+              });
+              $(element).popover('show');
+            }
+          });
+        });
+
+        // change mouse cursor when over marker
+        map.on('pointermove', function (e) {
+          if (e.dragging) {
+            $(element).popover('destroy');
+            return;
+          }
+          var pixel = map.getEventPixel(e.originalEvent);
+          var hit = map.hasFeatureAtPixel(pixel);
+          map.getTarget().style.cursor = hit
+            ? 'pointer'
+            : '';
+        });
+      }
+
+      var requestOpts = {
+        buffer: true,
+        escape: false,
+        timeout: 30000
+      };
+      var action = window.CHAP_APP.vfRemoting.getChapters;
+
+      Visualforce.remoting.Manager.invokeAction(action, function(chapters) {
+        var features = buildFeatures(chapters);
+        initMap(features);
+      }, requestOpts);
+
+      </script>
+    </body>
+  </html>
+</apex:page>

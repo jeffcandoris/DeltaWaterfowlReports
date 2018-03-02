@@ -1,0 +1,26 @@
+<apex:page id="communitiesSelfRegConfirmPage" controller="CommunitiesSelfRegConfirmController" showHeader="false" sidebar="false" standardStylesheets="false" cache="false" title="{!$Label.site.registration_confirmation}" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/> 
+    <style type="text/css">
+        body { 
+            background-color: #d9d9d9;
+            font-family: "Open Sans"; 
+            }  
+    </style> 
+    
+    <apex:define name="body">  
+    <center>
+        <apex:panelGrid bgcolor="white" columns="1" style="align: center;"> 
+        <center>
+        <img src="/resource/side_logo"></img>
+            <apex:outputPanel layout="block" styleClass="topPanelContainer" style="padding: 20px;">
+                  <center>
+                  <apex:outputText styleClass="title" value="{!$Label.site.thank_you_for_registering}"/>
+                  <br/>
+                  <a href="https://deltawaterfowl.org/">Go to Home Page</a> 
+                  </center>
+            </apex:outputPanel>
+            </center>
+       </apex:panelGrid>
+       </center>
+    </apex:define>
+</apex:page>

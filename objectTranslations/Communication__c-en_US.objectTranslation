@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Communications --></relationshipLabel>
+    </fields><fields>
+        <label><!-- RE Date Changed --></label>
+        <name>RE_Date_Changed__c</name>
+    </fields><fields>
+        <label><!-- RE Do Not Contact --></label>
+        <name>RE_Do_Not_Contact__c</name>
+    </fields><fields>
+        <label><!-- RE ID --></label>
+        <name>RE_ID__c</name>
+    </fields><fields>
+        <label><!-- RE Inactive --></label>
+        <name>RE_Inactive__c</name>
+    </fields><fields>
+        <label><!-- RE Is Primary --></label>
+        <name>RE_Is_Primary__c</name>
+    </fields><fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields><fields>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields><caseValues>
+        <plural>false</plural>
+        <value>Communication</value>
+    </caseValues><caseValues>
+        <plural>true</plural>
+        <value>Communications</value>
+    </caseValues><startsWith>Consonant</startsWith></CustomObjectTranslation>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Constituent Codes --></relationshipLabel>
+    </fields><fields>
+        <label><!-- Date From --></label>
+        <name>Date_From__c</name>
+    </fields><fields>
+        <label><!-- Date To --></label>
+        <name>Date_To__c</name>
+    </fields><fields>
+        <label><!-- Long Code --></label>
+        <name>Long_Code__c</name>
+        <picklistValues>
+            <masterLabel>Advertisers</masterLabel>
+            <translation><!-- Advertisers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ambassador Society Member</masterLabel>
+            <translation><!-- Ambassador Society Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arkansas Duck Producers</masterLabel>
+            <translation><!-- Arkansas Duck Producers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board of Directors</masterLabel>
+            <translation><!-- Board of Directors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bryan College Investment Group</masterLabel>
+            <translation><!-- Bryan College Investment Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Busted Shoulder</masterLabel>
+            <translation><!-- Busted Shoulder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Sponsor</masterLabel>
+            <translation><!-- Corporate Sponsor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cumulative Lifetime Member</masterLabel>
+            <translation><!-- Cumulative Lifetime Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dallas Ducks 100</masterLabel>
+            <translation><!-- Dallas Ducks 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Honorary Directors</masterLabel>
+            <translation><!-- Honorary Directors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lifetime Member</masterLabel>
+            <translation><!-- Lifetime Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minnedosa Duck Club</masterLabel>
+            <translation><!-- Minnedosa Duck Club --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Past Board</masterLabel>
+            <translation><!-- Past Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned Gift Prospect</masterLabel>
+            <translation><!-- Planned Gift Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prairie Grass Duck Club</masterLabel>
+            <translation><!-- Prairie Grass Duck Club --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shreveport/Bossier City Inv. Group</masterLabel>
+            <translation><!-- Shreveport/Bossier City Inv. Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff</masterLabel>
+            <translation><!-- Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waterfowl Legacy Fund</masterLabel>
+            <translation><!-- Waterfowl Legacy Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waterfowl Research Foundation</masterLabel>
+            <translation><!-- Waterfowl Research Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yearly Auto-Pay Member</masterLabel>
+            <translation><!-- Yearly Auto-Pay Member --></translation>
+        </picklistValues>
+    </fields><fields>
+        <label><!-- Short Code --></label>
+        <name>Short_Code__c</name>
+        <picklistValues>
+            <masterLabel>ADP</masterLabel>
+            <translation><!-- ADP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ADVERT</masterLabel>
+            <translation><!-- ADVERT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBSOC</masterLabel>
+            <translation><!-- AMBSOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTO</masterLabel>
+            <translation><!-- AUTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCIG</masterLabel>
+            <translation><!-- BCIG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRDDIR</masterLabel>
+            <translation><!-- BRDDIR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BS</masterLabel>
+            <translation><!-- BS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORP</masterLabel>
+            <translation><!-- CORP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CUMULT</masterLabel>
+            <translation><!-- CUMULT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DD100</masterLabel>
+            <translation><!-- DD100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HONDIR</masterLabel>
+            <translation><!-- HONDIR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIFEMB</masterLabel>
+            <translation><!-- LIFEMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MDC</masterLabel>
+            <translation><!-- MDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PGDC</masterLabel>
+            <translation><!-- PGDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PGP</masterLabel>
+            <translation><!-- PGP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PTRSTE</masterLabel>
+            <translation><!-- PTRSTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBCIG</masterLabel>
+            <translation><!-- SBCIG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff</masterLabel>
+            <translation><!-- Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WLF</masterLabel>
+            <translation><!-- WLF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WRF</masterLabel>
+            <translation><!-- WRF --></translation>
+        </picklistValues>
+    </fields><caseValues>
+        <plural>false</plural>
+        <value>Constituent Code</value>
+    </caseValues><caseValues>
+        <plural>true</plural>
+        <value>Constituent Codes</value>
+    </caseValues><startsWith>Consonant</startsWith><layouts>
+        <layout>Constituent Code Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts></CustomObjectTranslation>

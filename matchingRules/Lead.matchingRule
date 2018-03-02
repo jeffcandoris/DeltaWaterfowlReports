@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?><MatchingRules xmlns="http://soap.sforce.com/2006/04/metadata"><matchingRules>
+        <fullName>Delta_Lead_Matching_Rule</fullName>
+        <booleanFilter>1 OR (2 AND 3 AND 4)</booleanFilter>
+        <description>Matches on Exact E-mail or First Name(Fuzzy) &amp; Last Name(Exact) &amp; Mailing Street(Fuzzy)</description>
+        <label>Delta Lead Matching Rule</label>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>Email</fieldName>
+            <matchingMethod>Exact</matchingMethod>
+        </matchingRuleItems>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>FirstName</fieldName>
+            <matchingMethod>FirstName</matchingMethod>
+        </matchingRuleItems>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>LastName</fieldName>
+            <matchingMethod>Exact</matchingMethod>
+        </matchingRuleItems>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>Street</fieldName>
+            <matchingMethod>Street</matchingMethod>
+        </matchingRuleItems>
+        <ruleStatus>Active</ruleStatus>
+    </matchingRules></MatchingRules>

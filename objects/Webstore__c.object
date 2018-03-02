@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>Delta_Member_Profile_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Delta Member Profile ID</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Delta_Non_Member_Profile_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Delta Non Member Profile ID</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Web_Merchandise_Pricebook_ID_CAD__c</fullName>
+        <externalId>false</externalId>
+        <label>Web Merchandise Pricebook ID CAD</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Web_Merchandise_Pricebook_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Web Merchandise Pricebook ID</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Web_Ticket_Pricebook_ID_CAD__c</fullName>
+        <externalId>false</externalId>
+        <label>Web Ticket Pricebook ID CAD</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Web_Ticket_Pricebook_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Web Ticket Pricebook ID</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>X3_Year_Benefit_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>3 Year Benefit Id</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><customSettingsType>List</customSettingsType><enableFeeds>false</enableFeeds><label>Webstore</label><visibility>Protected</visibility></CustomObject>

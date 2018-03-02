@@ -1,0 +1,92 @@
+<apex:page id="communitiesSelfRegPage" controller="CommunitiesSelfRegController" title="{!$Label.site.user_registration}" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+    <style type="text/css">
+        body { background-color: #d9d9d9; }  
+    </style>
+
+     <apex:define name="body">
+      <center>
+                <div style="
+            width: 320px; 
+            box-shadow: 0 2px 6px #777777; 
+            background-color: #c4cbd0; 
+            border-radius: 4px;     
+            margin: 10% 0 10% 0;
+            padding: 20px;">
+            <img style="width: 125px; height: 125px;" src="/s/newlogo-172084.jpg" class="sfdcCbImage "></img>
+            <apex:form id="theForm" forceSSL="true">
+                    <apex:pageMessages id="error"/>
+                    <apex:panelGrid columns="1" style="margin-top:1em;">
+
+                      <apex:inputText style="    
+                        margin-bottom: 10px;
+                        padding: 12px;
+                        background-color: white;
+                        border: 1px solid #ccc;
+                        border-radius: 2px;
+                        color: #888;
+                        font-family: Open Sans;"
+                        html-placeholder="First Name" required="true" id="firstName" value="{!firstName}" label="First Name"/>
+
+                      <apex:inputText style="    
+                        margin-bottom: 10px;
+                        padding: 12px;
+                        background-color: white;
+                        border: 1px solid #ccc;
+                        border-radius: 2px;
+                        color: #888;
+                        font-family: Open Sans;"
+                        html-placeholder="Last Name" required="true" id="lastName" value="{!lastName}" label="Last Name"/>
+
+                      <apex:inputText style="    
+                        margin-bottom: 10px;
+                        padding: 12px;
+                        background-color: white;
+                        border: 1px solid #ccc;
+                        border-radius: 2px;
+                        color: #888;
+                        font-family: Open Sans;"
+                        html-placeholder="Nickname" required="true" id="communityNickname" value="{!communityNickname}" label="{!$Label.site.community_nickname}"/>
+
+                      <apex:inputText style="    
+                        margin-bottom: 10px;
+                        padding: 12px;
+                        background-color: white;
+                        border: 1px solid #ccc;
+                        border-radius: 2px;
+                        color: #888;
+                        font-family: Open Sans;"
+                        html-placeholder="Email" required="true" id="email" value="{!email}" label="{!$Label.site.email}"/>
+                        
+                      <apex:commandButton style="
+                        background-color: #0070d2;
+                        border-color: #005aa9;
+                        font-family: Open Sans;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        margin-left: 0;
+                        margin-right: 0;
+                        width: 100%;
+                        color: #fff;
+                        display: inline-block;
+                        text-align: center;
+                        vertical-align: middle;
+                        background-image: none;
+                        border: 1px solid transparent;
+                        white-space: nowrap;
+                        padding: 10px 12px;
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 1.42857143;
+                        border-radius: 2px;
+                        -webkit-user-select: none;
+                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7),0 1px 0 rgba(0, 0, 0, 0.3);"
+                        action="{!registerUser}" value="{!$Label.site.submit}" id="submit"/>
+                    </apex:panelGrid>
+                  <br/>
+</apex:form>
+</div>
+     </center>
+    </apex:define>
+
+</apex:page>

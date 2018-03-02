@@ -1,0 +1,7 @@
+<apex:page showHeader="false" sidebar="false" id="CommunitiesTemplate">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+  <apex:stylesheet value="{!$Site.Prefix}/communities/CommunitiesStyles.css"/>
+  <apex:insert name="header"/>
+  <apex:insert name="body"/>
+  <apex:insert name="footer"/>
+</apex:page>

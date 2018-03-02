@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><MatchingRules xmlns="http://soap.sforce.com/2006/04/metadata"><matchingRules>
+        <fullName>Delta_Account_Matching_Rule</fullName>
+        <booleanFilter>(1 AND 2) OR (1 AND 3)</booleanFilter>
+        <description>Matches on Account Name(Exact) &amp; Billing Street(Fuzzy) OR Account Name(Exact) &amp; Billing City(Exact)</description>
+        <label>Delta Account Matching Rule</label>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>Name</fieldName>
+            <matchingMethod>Exact</matchingMethod>
+        </matchingRuleItems>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>BillingStreet</fieldName>
+            <matchingMethod>Street</matchingMethod>
+        </matchingRuleItems>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>BillingCity</fieldName>
+            <matchingMethod>Exact</matchingMethod>
+        </matchingRuleItems>
+        <ruleStatus>Active</ruleStatus>
+    </matchingRules></MatchingRules>

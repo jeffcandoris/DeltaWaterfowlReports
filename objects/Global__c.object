@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <fullName>CRLF__c</fullName>
+        <externalId>false</externalId>
+        <label>CRLF</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields><customSettingsType>Hierarchy</customSettingsType><enableFeeds>false</enableFeeds><label>Global</label><visibility>Protected</visibility></CustomObject>

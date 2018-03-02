@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send an email when total donations meet or exceed $35</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Membership Threshold Met</name>
+    <style>none</style>
+    <subject>Membership Threshold Met: {!Account.npe01__One2OneContact__c}</subject>
+    <type>text</type>
+</EmailTemplate>

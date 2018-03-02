@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- WooCommerce Serializers --></relationshipLabel>
+    </fields><fields>
+        <label><!-- Body --></label>
+        <name>Body__c</name>
+    </fields><fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- WooCommerce Serializers --></relationshipLabel>
+    </fields><fields>
+        <label><!-- Error --></label>
+        <name>Error__c</name>
+    </fields><fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- WooCommerce Serializers --></relationshipLabel>
+    </fields><fields>
+        <label><!-- Order Number --></label>
+        <name>Order_Number__c</name>
+    </fields><fields>
+        <label><!-- Retry Count --></label>
+        <name>Retry_Count__c</name>
+    </fields><fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Processed</masterLabel>
+            <translation><!-- Not Processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processed</masterLabel>
+            <translation><!-- Processed --></translation>
+        </picklistValues>
+    </fields><caseValues>
+        <plural>false</plural>
+        <value>WooCommerce Serializer</value>
+    </caseValues><caseValues>
+        <plural>true</plural>
+        <value>WooCommerce Serializers</value>
+    </caseValues><startsWith>Consonant</startsWith><layouts>
+        <layout>WooCommerce Serializer Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts></CustomObjectTranslation>

@@ -1,0 +1,679 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <name>AccountSource</name>
+        <picklistValues>
+            <masterLabel>Development</masterLabel>
+            <translation><!-- Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Referral</masterLabel>
+            <translation><!-- Partner Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Inquiry</masterLabel>
+            <translation><!-- Phone Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased List</masterLabel>
+            <translation><!-- Purchased List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields><fields>
+        <label><!-- Billing Street 1 --></label>
+        <name>Billing_Street_1__c</name>
+    </fields><fields>
+        <label><!-- Billing Street 2 --></label>
+        <name>Billing_Street_2__c</name>
+    </fields><fields>
+        <label><!-- Billing Street 3 --></label>
+        <name>Billing_Street_3__c</name>
+    </fields><fields>
+        <label><!-- Chapter Chair --></label>
+        <name>Chapter_Chair__c</name>
+        <relationshipLabel><!-- Accounts (Chapter Chair) --></relationshipLabel>
+    </fields><fields>
+        <help><!-- {AA000} --></help>
+        <label><!-- Chapter Number --></label>
+        <name>Chapter_Number__c</name>
+    </fields><fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields><fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields><fields>
+        <label><!-- Facebook Page --></label>
+        <name>Facebook_Page__c</name>
+    </fields><fields>
+        <label><!-- First Opp $ (closed won) --></label>
+        <name>First_Opp_Amount_closed_won__c</name>
+    </fields><fields>
+        <label><!-- First Opp Date (closed won) --></label>
+        <name>First_Opp_Date_closed_won__c</name>
+    </fields><fields>
+        <label><!-- First Opp Dept --></label>
+        <name>First_Opp_Dept__c</name>
+    </fields><fields>
+        <label><!-- Giving Level --></label>
+        <name>Giving_Level__c</name>
+    </fields><fields>
+        <name>Industry</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apparel</masterLabel>
+            <translation><!-- Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronics</masterLabel>
+            <translation><!-- Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machinery</masterLabel>
+            <translation><!-- Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not For Profit</masterLabel>
+            <translation><!-- Not For Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields><fields>
+        <label><!-- Largest Opp $ (closed won) --></label>
+        <name>Largest_Opp_Amount_closed_won__c</name>
+    </fields><fields>
+        <label><!-- Last Opp Date (closed won) --></label>
+        <name>Last_Opp_Date_closed_won__c</name>
+    </fields><fields>
+        <label><!-- Last Opp $ (closed won) --></label>
+        <name>Last_Opp_amount_closed_won__c</name>
+    </fields><fields>
+        <label><!-- Last Payment Amount (all stages) --></label>
+        <name>Last_Payment_Amount_all_stages__c</name>
+    </fields><fields>
+        <label><!-- Last Payment Date (all stages) --></label>
+        <name>Last_Payment_Date_all_stages__c</name>
+    </fields><fields>
+        <name>Ownership</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private</masterLabel>
+            <translation><!-- Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public</masterLabel>
+            <translation><!-- Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+    </fields><fields>
+        <label><!-- Primary Contact Email --></label>
+        <name>Primary_Contact_Email__c</name>
+    </fields><fields>
+        <label><!-- Primary Contact Phone --></label>
+        <name>Primary_Contact_Phone__c</name>
+    </fields><fields>
+        <label><!-- RE Added By --></label>
+        <name>RE_Added_By__c</name>
+    </fields><fields>
+        <label><!-- RE Alias 1 --></label>
+        <name>RE_Alias_1__c</name>
+    </fields><fields>
+        <label><!-- RE Alias 2 --></label>
+        <name>RE_Alias_2__c</name>
+    </fields><fields>
+        <label><!-- RE Changed By --></label>
+        <name>RE_Changed_By__c</name>
+    </fields><fields>
+        <label><!-- RE Date Added --></label>
+        <name>RE_Date_Added__c</name>
+    </fields><fields>
+        <label><!-- RE Date Changed --></label>
+        <name>RE_Date_Changed__c</name>
+    </fields><fields>
+        <label><!-- RE ID --></label>
+        <name>RE_ID__c</name>
+    </fields><fields>
+        <label><!-- RE Inactive --></label>
+        <name>RE_Inactive__c</name>
+    </fields><fields>
+        <name>Rating</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields><fields>
+        <label><!-- Regional Director --></label>
+        <name>Regional_Director__c</name>
+        <relationshipLabel><!-- Accounts (Regional Director) --></relationshipLabel>
+    </fields><fields>
+        <label><!-- Salutation Override --></label>
+        <name>Salutation_Override__c</name>
+    </fields><fields>
+        <label><!-- Shipping Street 1 --></label>
+        <name>Shipping_Street_1__c</name>
+    </fields><fields>
+        <label><!-- Shipping Street 2 --></label>
+        <name>Shipping_Street_2__c</name>
+    </fields><fields>
+        <label><!-- Shipping Street 3 --></label>
+        <name>Shipping_Street_3__c</name>
+    </fields><fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields><fields>
+        <label><!-- Total Gross Dollar Units --></label>
+        <name>Total_Gross_Dollar_Units__c</name>
+    </fields><fields>
+        <label><!-- Total Gross Payment Units --></label>
+        <name>Total_Gross_Payment_Units__c</name>
+    </fields><fields>
+        <label><!-- Total Opp $ (all stages) --></label>
+        <name>Total_Opp_Amount_all_stages__c</name>
+    </fields><fields>
+        <label><!-- Total Opp $ (closed won) --></label>
+        <name>Total_Opp_Amount_closed_won__c</name>
+    </fields><fields>
+        <label><!-- Total Payment Received (all stages) --></label>
+        <name>Total_Payment_Received_all_stages__c</name>
+    </fields><fields>
+        <label><!-- Total # of Opps (closed won) --></label>
+        <name>Total_of_Opps_closed_won__c</name>
+    </fields><fields>
+        <label><!-- Total # of Paid Payments (all stages) --></label>
+        <name>Total_of_Paid_Payments_all_stages__c</name>
+    </fields><fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Channel Partner / Reseller</masterLabel>
+            <translation><!-- Channel Partner / Reseller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Channel</masterLabel>
+            <translation><!-- Customer - Channel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Direct</masterLabel>
+            <translation><!-- Customer - Direct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foundation</masterLabel>
+            <translation><!-- Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household</masterLabel>
+            <translation><!-- Household --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation Partner</masterLabel>
+            <translation><!-- Installation Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nonprofit</masterLabel>
+            <translation><!-- Nonprofit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Partner</masterLabel>
+            <translation><!-- Technology Partner --></translation>
+        </picklistValues>
+    </fields><fields>
+        <label><!-- User Lookup --></label>
+        <name>User_Lookup__c</name>
+    </fields><fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields><fields>
+        <label><!-- Zip Code --></label>
+        <name>Zip_Code__c</name>
+    </fields><fields>
+        <label><!-- Primary Contact --></label>
+        <name>npe01__One2OneContact__c</name>
+        <relationshipLabel><!-- Account --></relationshipLabel>
+    </fields><fields>
+        <label><!-- _SYSTEM: IsIndividual --></label>
+        <name>npe01__SYSTEMIsIndividual__c</name>
+    </fields><fields>
+        <help>システムフィールド：利用または変更することは禁止</help>
+        <label><!-- _SYSTEM: AccountType --></label>
+        <name>npe01__SYSTEM_AccountType__c</name>
+    </fields><fields>
+        <label><!-- Average Gift --></label>
+        <name>npo02__AverageAmount__c</name>
+    </fields><fields>
+        <label><!-- Best Gift Year Total --></label>
+        <name>npo02__Best_Gift_Year_Total__c</name>
+    </fields><fields>
+        <label><!-- Best Gift Year --></label>
+        <name>npo02__Best_Gift_Year__c</name>
+    </fields><fields>
+        <label><!-- First Gift Date --></label>
+        <name>npo02__FirstCloseDate__c</name>
+    </fields><fields>
+        <help>世帯団体で、除外なしで順序付けされた関係する個人の項目を使用します。自動的に生成されます。</help>
+        <label><!-- Formal Greeting --></label>
+        <name>npo02__Formal_Greeting__c</name>
+    </fields><fields>
+        <label><!-- Household Phone --></label>
+        <name>npo02__HouseholdPhone__c</name>
+    </fields><fields>
+        <help>世帯団体で、除外なしで順序付けされた関係する個人の項目を使用します。自動的に生成されます。</help>
+        <label><!-- Informal Greeting --></label>
+        <name>npo02__Informal_Greeting__c</name>
+    </fields><fields>
+        <label><!-- Largest Gift --></label>
+        <name>npo02__LargestAmount__c</name>
+    </fields><fields>
+        <label><!-- Last Gift Date --></label>
+        <name>npo02__LastCloseDate__c</name>
+    </fields><fields>
+        <label><!-- Last Membership Amount --></label>
+        <name>npo02__LastMembershipAmount__c</name>
+    </fields><fields>
+        <label><!-- Last Membership Date --></label>
+        <name>npo02__LastMembershipDate__c</name>
+    </fields><fields>
+        <label><!-- Last Membership Level --></label>
+        <name>npo02__LastMembershipLevel__c</name>
+    </fields><fields>
+        <label><!-- Last Membership Origin --></label>
+        <name>npo02__LastMembershipOrigin__c</name>
+    </fields><fields>
+        <label><!-- Last Gift Amount --></label>
+        <name>npo02__LastOppAmount__c</name>
+    </fields><fields>
+        <label><!-- Membership End Date --></label>
+        <name>npo02__MembershipEndDate__c</name>
+    </fields><fields>
+        <label><!-- Membership Join Date --></label>
+        <name>npo02__MembershipJoinDate__c</name>
+    </fields><fields>
+        <label><!-- Total Number of Gifts --></label>
+        <name>npo02__NumberOfClosedOpps__c</name>
+    </fields><fields>
+        <label><!-- Number of Memberships --></label>
+        <name>npo02__NumberOfMembershipOpps__c</name>
+    </fields><fields>
+        <label><!-- Total Gifts Two Years Ago --></label>
+        <name>npo02__OppAmount2YearsAgo__c</name>
+    </fields><fields>
+        <label><!-- Total Gifts Last N Days --></label>
+        <name>npo02__OppAmountLastNDays__c</name>
+    </fields><fields>
+        <label><!-- Total Gifts Last Year --></label>
+        <name>npo02__OppAmountLastYear__c</name>
+    </fields><fields>
+        <label><!-- Total Gifts This Year --></label>
+        <name>npo02__OppAmountThisYear__c</name>
+    </fields><fields>
+        <label><!-- Number of Gifts Two Years Ago --></label>
+        <name>npo02__OppsClosed2YearsAgo__c</name>
+    </fields><fields>
+        <label><!-- Number of Gifts Last N Days --></label>
+        <name>npo02__OppsClosedLastNDays__c</name>
+    </fields><fields>
+        <label><!-- Number of Gifts Last Year --></label>
+        <name>npo02__OppsClosedLastYear__c</name>
+    </fields><fields>
+        <label><!-- Number of Gifts This Year --></label>
+        <name>npo02__OppsClosedThisYear__c</name>
+    </fields><fields>
+        <help>世帯団体で、世帯コードによっては自動的に入力されない名前関連項目を指定します。</help>
+        <label><!-- _SYSTEM: CUSTOM NAMING --></label>
+        <name>npo02__SYSTEM_CUSTOM_NAMING__c</name>
+        <picklistValues>
+            <masterLabel>Formal_Greeting__c</masterLabel>
+            <translation><!-- Formal_Greeting__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Informal_Greeting__c</masterLabel>
+            <translation><!-- Informal_Greeting__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Name</masterLabel>
+            <translation><!-- Name --></translation>
+        </picklistValues>
+    </fields><fields>
+        <label><!-- Smallest Gift --></label>
+        <name>npo02__SmallestAmount__c</name>
+    </fields><fields>
+        <label><!-- Total Membership Amount --></label>
+        <name>npo02__TotalMembershipOppAmount__c</name>
+    </fields><fields>
+        <label><!-- Total Gifts --></label>
+        <name>npo02__TotalOppAmount__c</name>
+    </fields><fields>
+        <help>この団体が作成されたバッチ。</help>
+        <label><!-- Batch --></label>
+        <name>npsp__Batch__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields><fields>
+        <help>この団体が資金調達する一般的プログラム領域。</help>
+        <label><!-- Funding Focus --></label>
+        <name>npsp__Funding_Focus__c</name>
+        <picklistValues>
+            <masterLabel>Animal Welfare</masterLabel>
+            <translation>動物福祉</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arts and Culture</masterLabel>
+            <translation>芸術文化</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capacity Building</masterLabel>
+            <translation>能力開発</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation>教育</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation>環境</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Services</masterLabel>
+            <translation>医療業</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human Services</masterLabel>
+            <translation>福祉</translation>
+        </picklistValues>
+    </fields><fields>
+        <help>この団体が助成金提供団体であることを示します。財団、政府機関、法人などに適用できます。</help>
+        <label><!-- Grantmaker --></label>
+        <name>npsp__Grantmaker__c</name>
+    </fields><fields>
+        <help>会社のマッチングギフト管理者の名前。</help>
+        <label><!-- Matching Gift Administrator Name --></label>
+        <name>npsp__Matching_Gift_Administrator_Name__c</name>
+    </fields><fields>
+        <help>会社が 1 回の支援でマッチングする最大支援金額。</help>
+        <label><!-- Matching Gift Amount Max --></label>
+        <name>npsp__Matching_Gift_Amount_Max__c</name>
+    </fields><fields>
+        <help>会社がマッチングする最小支援金額。</help>
+        <label><!-- Matching Gift Amount Min --></label>
+        <name>npsp__Matching_Gift_Amount_Min__c</name>
+    </fields><fields>
+        <help>会社が 1 年間に従業員の支援金額とマッチングする最大支援金額。</help>
+        <label><!-- Matching Gift Annual Employee Max --></label>
+        <name>npsp__Matching_Gift_Annual_Employee_Max__c</name>
+    </fields><fields>
+        <help>会社のマッチングギフトプログラムに関する追加メモ。</help>
+        <label><!-- Matching Gift Comments --></label>
+        <name>npsp__Matching_Gift_Comments__c</name>
+    </fields><fields>
+        <help>マッチングギフトを提供する会社かどうか。</help>
+        <label><!-- Matching Gift Company --></label>
+        <name>npsp__Matching_Gift_Company__c</name>
+    </fields><fields>
+        <help>会社のマッチングギフト管理者のメール。</help>
+        <label><!-- Matching Gift Email --></label>
+        <name>npsp__Matching_Gift_Email__c</name>
+    </fields><fields>
+        <help>マッチングギフト情報が最後に更新された日付。</help>
+        <label><!-- Matching Gift Info Updated --></label>
+        <name>npsp__Matching_Gift_Info_Updated__c</name>
+    </fields><fields>
+        <help>会社がマッチングする支援の割合。</help>
+        <label><!-- Matching Gift Percent --></label>
+        <name>npsp__Matching_Gift_Percent__c</name>
+    </fields><fields>
+        <help>マッチングギフト管理事務所の電話番号。</help>
+        <label><!-- Matching Gift Phone --></label>
+        <name>npsp__Matching_Gift_Phone__c</name>
+    </fields><fields>
+        <help>どの程度古い支援をマッチングの対象とするかの制限。</help>
+        <label><!-- Matching Gift Request Deadline --></label>
+        <name>npsp__Matching_Gift_Request_Deadline__c</name>
+    </fields><fields>
+        <help>数式: この世帯にメンバーがいる年数。</help>
+        <label><!-- Membership Span --></label>
+        <name>npsp__Membership_Span__c</name>
+    </fields><fields>
+        <help>数式: 期限内、期限切れ、または猶予期間。[世帯設定] で設定されるデフォルトの猶予期間。</help>
+        <label><!-- Membership Status --></label>
+        <name>npsp__Membership_Status__c</name>
+    </fields><fields>
+        <help>世帯団体での世帯内の個人の数。</help>
+        <label><!-- Number of Household Members --></label>
+        <name>npsp__Number_of_Household_Members__c</name>
+    </fields><fields>
+        <label><!-- MapAnything Assignment Rule --></label>
+        <name>sma__MAAssignmentRule__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields><layouts>
+        <layout>Chapter Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts><layouts>
+        <layout>Community Account Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts><layouts>
+        <layout>Development Household Layout</layout>
+        <sections>
+            <label>住所</label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label>項目</label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Total Opportunity Information --></label>
+            <section>Total Opportunity Information</section>
+        </sections>
+    </layouts><quickActions>
+        <label><!-- New Donation --></label>
+        <name>New_Donation</name>
+    </quickActions><quickActions>
+        <label><!-- New Grant --></label>
+        <name>New_Grant</name>
+    </quickActions><quickActions>
+        <label><!-- New Major Gift --></label>
+        <name>New_Major_Gift</name>
+    </quickActions><quickActions>
+        <label><!-- New Matching Donation --></label>
+        <name>New_Matching_Donation</name>
+    </quickActions><quickActions>
+        <label><!-- New Membership --></label>
+        <name>New_Membership</name>
+    </quickActions><recordTypes>
+        <label><!-- Chapter --></label>
+        <name>Chapter</name>
+    </recordTypes><recordTypes>
+        <label><!-- Household Account --></label>
+        <name>HH_Account</name>
+    </recordTypes><recordTypes>
+        <label><!-- Organization --></label>
+        <name>Organization</name>
+    </recordTypes><webLinks>
+        <label><!-- MA_MapIt_a0V36000004lvLUEAY --></label>
+        <name>MA_MapIt_a0V36000004lvLUEAY</name>
+    </webLinks><webLinks>
+        <label><!-- Mass_Delete --></label>
+        <name>MassManager__Mass_Delete</name>
+    </webLinks><webLinks>
+        <label><!-- Mass_Edit_Standard_Fields --></label>
+        <name>MassManager__Mass_Edit_Standard_Fields</name>
+    </webLinks><webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>MassManager__Mass_Update</name>
+    </webLinks><webLinks>
+        <label><!-- Manage_Household --></label>
+        <name>npsp__Manage_Household</name>
+    </webLinks><webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks><webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks><webLinks>
+        <label><!-- Send_To_Prospect_Insight --></label>
+        <name>pi__Send_To_Prospect_Insight</name>
+    </webLinks></CustomObjectTranslation>

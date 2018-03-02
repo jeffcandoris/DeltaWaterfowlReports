@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata"><fields>
+        <label><!-- Comp List Magazine --></label>
+        <name>Comp_List_Magazine__c</name>
+    </fields><fields>
+        <label><!-- Company Street 1 --></label>
+        <name>Company_Street_1__c</name>
+    </fields><fields>
+        <label><!-- Company Street 2 --></label>
+        <name>Company_Street_2__c</name>
+    </fields><fields>
+        <label><!-- Company Street 3 --></label>
+        <name>Company_Street_3__c</name>
+    </fields><fields>
+        <name>Industry</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apparel</masterLabel>
+            <translation><!-- Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronics</masterLabel>
+            <translation><!-- Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machinery</masterLabel>
+            <translation><!-- Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not For Profit</masterLabel>
+            <translation><!-- Not For Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields><fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Development</masterLabel>
+            <translation><!-- Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Referral</masterLabel>
+            <translation><!-- Partner Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Inquiry</masterLabel>
+            <translation><!-- Phone Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased List</masterLabel>
+            <translation><!-- Purchased List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields><fields>
+        <label><!-- OLD ID --></label>
+        <name>OLD_ID__c</name>
+    </fields><fields>
+        <name>Rating</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields><fields>
+        <name>Status</name>
+        <picklistValues>
+            <masterLabel>Closed - Converted</masterLabel>
+            <translation><!-- Closed - Converted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Not Converted</masterLabel>
+            <translation><!-- Closed - Not Converted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open - Not Contacted</masterLabel>
+            <translation><!-- Open - Not Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working - Contacted</masterLabel>
+            <translation><!-- Working - Contacted --></translation>
+        </picklistValues>
+    </fields><fields>
+        <label><!-- Street 1 --></label>
+        <name>Street_1__c</name>
+    </fields><fields>
+        <label><!-- Street 2 --></label>
+        <name>Street_2__c</name>
+    </fields><fields>
+        <label><!-- Street 3 --></label>
+        <name>Street_3__c</name>
+    </fields><fields>
+        <label><!-- Preferred Email --></label>
+        <name>npe01__Preferred_Email__c</name>
+        <picklistValues>
+            <masterLabel>Alternate</masterLabel>
+            <translation>Alternativ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation>Persönlich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>Geschäftlich</translation>
+        </picklistValues>
+    </fields><fields>
+        <label><!-- Preferred Phone --></label>
+        <name>npe01__Preferred_Phone__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>Privat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation>Mobil</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Sonstige</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>Geschäftlich</translation>
+        </picklistValues>
+    </fields><fields>
+        <help>Der Batch, aus dem dieser Lead erstellt wurde</help>
+        <label><!-- Batch --></label>
+        <name>npsp__Batch__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields><fields>
+        <label><!-- Company City --></label>
+        <name>npsp__CompanyCity__c</name>
+    </fields><fields>
+        <label><!-- Company Country --></label>
+        <name>npsp__CompanyCountry__c</name>
+    </fields><fields>
+        <label><!-- Company Zip/Postal Code --></label>
+        <name>npsp__CompanyPostalCode__c</name>
+    </fields><fields>
+        <label><!-- Company State/Province --></label>
+        <name>npsp__CompanyState__c</name>
+    </fields><fields>
+        <label><!-- Company Street --></label>
+        <name>npsp__CompanyStreet__c</name>
+    </fields><fields>
+        <label><!-- Needs Score Synced --></label>
+        <name>pi__Needs_Score_Synced__c</name>
+    </fields><fields>
+        <label><!-- Pardot Last Scored At --></label>
+        <name>pi__Pardot_Last_Scored_At__c</name>
+    </fields><fields>
+        <label><!-- Pardot Campaign --></label>
+        <name>pi__campaign__c</name>
+    </fields><fields>
+        <label><!-- Pardot Comments --></label>
+        <name>pi__comments__c</name>
+    </fields><fields>
+        <label><!-- Pardot Conversion Date --></label>
+        <name>pi__conversion_date__c</name>
+    </fields><fields>
+        <label><!-- Pardot Conversion Object Name --></label>
+        <name>pi__conversion_object_name__c</name>
+    </fields><fields>
+        <label><!-- Pardot Conversion Object Type --></label>
+        <name>pi__conversion_object_type__c</name>
+    </fields><fields>
+        <label><!-- Pardot Created Date --></label>
+        <name>pi__created_date__c</name>
+    </fields><fields>
+        <label><!-- Pardot First Activity --></label>
+        <name>pi__first_activity__c</name>
+    </fields><fields>
+        <label><!-- Pardot First Referrer Query --></label>
+        <name>pi__first_search_term__c</name>
+    </fields><fields>
+        <label><!-- Pardot First Referrer Type --></label>
+        <name>pi__first_search_type__c</name>
+    </fields><fields>
+        <label><!-- Pardot First Referrer --></label>
+        <name>pi__first_touch_url__c</name>
+    </fields><fields>
+        <label><!-- Pardot Grade --></label>
+        <name>pi__grade__c</name>
+    </fields><fields>
+        <label><!-- Pardot Last Activity --></label>
+        <name>pi__last_activity__c</name>
+    </fields><fields>
+        <label><!-- Pardot Notes --></label>
+        <name>pi__notes__c</name>
+    </fields><fields>
+        <label><!-- Pardot Hard Bounced --></label>
+        <name>pi__pardot_hard_bounced__c</name>
+    </fields><fields>
+        <label><!-- Pardot Score --></label>
+        <name>pi__score__c</name>
+    </fields><fields>
+        <label><!-- Pardot URL --></label>
+        <name>pi__url__c</name>
+    </fields><fields>
+        <label><!-- Google Analytics Campaign --></label>
+        <name>pi__utm_campaign__c</name>
+    </fields><fields>
+        <label><!-- Google Analytics Content --></label>
+        <name>pi__utm_content__c</name>
+    </fields><fields>
+        <label><!-- Google Analytics Medium --></label>
+        <name>pi__utm_medium__c</name>
+    </fields><fields>
+        <label><!-- Google Analytics Source --></label>
+        <name>pi__utm_source__c</name>
+    </fields><fields>
+        <label><!-- Google Analytics Term --></label>
+        <name>pi__utm_term__c</name>
+    </fields><fields>
+        <label><!-- MapAnything Assignment Rule --></label>
+        <name>sma__MAAssignmentRule__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields><layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label><!-- Pardot --></label>
+            <section>Pardot</section>
+        </sections>
+        <sections>
+            <label><!-- Pardot Activities --></label>
+            <section>Pardot Activities</section>
+        </sections>
+        <sections>
+            <label><!-- Volunteer Information --></label>
+            <section>Volunteer Information</section>
+        </sections>
+    </layouts><webLinks>
+        <label><!-- MA_MapIt_a0V36000004lvLWEAY --></label>
+        <name>MA_MapIt_a0V36000004lvLWEAY</name>
+    </webLinks><webLinks>
+        <label><!-- Mass_Delete --></label>
+        <name>MassManager__Mass_Delete</name>
+    </webLinks><webLinks>
+        <label><!-- Mass_Edit_Standard_Fields --></label>
+        <name>MassManager__Mass_Edit_Standard_Fields</name>
+    </webLinks><webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>MassManager__Mass_Update</name>
+    </webLinks><webLinks>
+        <label><!-- Send_Pardot_Email --></label>
+        <name>pi__Send_Pardot_Email</name>
+    </webLinks><webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks><webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks><webLinks>
+        <label><!-- Send_to_Prospect_Insight --></label>
+        <name>pi__Send_to_Prospect_Insight</name>
+    </webLinks></CustomObjectTranslation>

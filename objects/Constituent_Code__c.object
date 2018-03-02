@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides><fields>
+        <fullName>Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Constituent Codes</relationshipLabel>
+        <relationshipName>Constituent_Codes</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields><fields>
+        <fullName>Date_From__c</fullName>
+        <externalId>false</externalId>
+        <label>Date From</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Date_To__c</fullName>
+        <externalId>false</externalId>
+        <label>Date To</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Long_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Long Code</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Advertisers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ambassador Society Member</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Arkansas Duck Producers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Board of Directors</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bryan College Investment Group</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Busted Shoulder</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate Sponsor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cumulative Lifetime Member</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dallas Ducks 100</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Honorary Directors</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lifetime Member</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Minnedosa Duck Club</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Past Board</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Planned Gift Prospect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prairie Grass Duck Club</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shreveport/Bossier City Inv. Group</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Staff</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waterfowl Legacy Fund</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waterfowl Research Foundation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yearly Auto-Pay Member</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields><fields>
+        <fullName>Short_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Short Code</label>
+        <picklist>
+            <picklistValues>
+                <fullName>ADP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ADVERT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AMBSOC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AUTO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BCIG</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BRDDIR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CORP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CUMULT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DD100</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HONDIR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LIFEMB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MDC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PGDC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PGP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PTRSTE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SBCIG</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Staff</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WLF</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WRF</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields><allowInChatterGroups>false</allowInChatterGroups><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><deploymentStatus>Deployed</deploymentStatus><enableActivities>false</enableActivities><enableBulkApi>true</enableBulkApi><enableFeeds>false</enableFeeds><enableHistory>false</enableHistory><enableReports>true</enableReports><enableSearch>true</enableSearch><enableSharing>true</enableSharing><enableStreamingApi>true</enableStreamingApi><label>Constituent Code</label><nameField>
+        <displayFormat>C-{0000}</displayFormat>
+        <label>Constituent Code Name</label>
+        <type>AutoNumber</type>
+    </nameField><pluralLabel>Constituent Codes</pluralLabel><searchLayouts /><sharingModel>ControlledByParent</sharingModel></CustomObject>

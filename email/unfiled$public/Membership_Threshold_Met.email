@@ -1,0 +1,3 @@
+{!Account.npe01__One2OneContact__c} {!Contact.Membership_ID__c} has met the threshold to receive a membership with a cumulative total of {!Account.Total_Payment_Received_all_stages__c}.
+
+Create a Friend membership opportunity.

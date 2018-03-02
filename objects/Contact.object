@@ -1,0 +1,1127 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Delete</actionName>
+        <content>npsp__CON_DeleteContactOverride</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>NewContact</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides><compactLayouts>
+        <fullName>Community_User_Compact_Layout</fullName>
+        <fields>AccountId</fields>
+        <fields>Email</fields>
+        <fields>Phone</fields>
+        <label>Community User Compact Layout</label>
+    </compactLayouts><fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>AssistantName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>AssistantPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>Attended_Event_in_Last_16_Months_Market__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(NOT(ISNULL(Last_Event_Attended_Market_Source_Code__c)), NOT(ISBLANK(Last_Event_Attended_Market_Source_Code__c)), Last_Event_Attended_Market_Source_Code__c &gt; Today() - 487, Last_Event_Attended_Market_Source_Code__c &lt; Today()+1), TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Attended Event in Last 16 Months Market</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Attended_Event_in_Last_16_Months__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(NOT(ISNULL(Last_Event_Attended__c)), NOT(ISBLANK(Last_Event_Attended__c)), Last_Event_Attended__c &gt; Today() - 487, Last_Event_Attended__c &lt; Today()+1), TRUE, FALSE)</formula>
+        <label>Attended Event in Last 16 Months</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Attended_Expo_in_Last_16_Months__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(NOT(ISNULL(Last_Expo_Attended__c)), NOT(ISBLANK(Last_Expo_Attended__c)), Last_Expo_Attended__c &gt; Today() - 487, Last_Expo_Attended__c &lt; Today()+1), TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Attended Expo in Last 16 Months</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Attended_Shoot_in_Last_16_Months__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(NOT(ISNULL(Last_Shoot_Attended__c)), NOT(ISBLANK(Last_Shoot_Attended__c)), Last_Shoot_Attended__c &gt; Today() - 487, Last_Shoot_Attended__c &lt; Today()+1), TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Attended Shoot in Last 16 Months</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Auto_Membership_Id__c</fullName>
+        <description>Do not modify this field</description>
+        <externalId>false</externalId>
+        <label>Mem Id Gen</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields><fields>
+        <fullName>Birthdate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>Comp_List_Magazine__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Comp List Magazine</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>Department</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>Development_Team_Solicit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Development Team Solicit</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>Do_Not_Solicit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Do Not Solicit</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Do_Not_Trade_Sell__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Do Not Trade/Sell</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Email</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>Exclude_From_Mailings__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Exclude From Mailings</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>First_Opp_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>First Opp Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>First_Opp_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>First Opp Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Formal_Greeting__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Salutation) + " " + FirstName + " " + MiddleName + " " + LastName + IF(NOT(ISBLANK(Suffix)), ", " + Suffix,'')</formula>
+        <label>Formal Greeting</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Gender__c</fullName>
+        <externalId>false</externalId>
+        <label>Gender</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Male</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Female</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields><fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>HomePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>Informal_Salutation__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Use_Nickname__c = true,  Nick_Name__c , FirstName )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Informal Salutation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>LastCURequestDate</fullName>
+    </fields><fields>
+        <fullName>LastCUUpdateDate</fullName>
+    </fields><fields>
+        <fullName>Last_Event_Attended_Market_Source_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Event Attended (Market Source Code)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Last_Event_Attended__c</fullName>
+        <description>This stores the date of the last attended event</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of the last Event this Contact attended. (Campaign with record type of Event and Type of Event)</inlineHelpText>
+        <label>Last Event Attended</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Last_Expo_Attended__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of the last Expo this Contact attended. (Campaign with record type of Event and Type of Expo)</inlineHelpText>
+        <label>Last Expo Attended</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Last_Opp_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Opp Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>Last_Opp_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Opp Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>Last_Shoot_Attended__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of the last Shoot this Contact attended. (Campaign with record type of Event and Type of Shoot)</inlineHelpText>
+        <label>Last Shoot Attended</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>LeadSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Development</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields><fields>
+        <fullName>MailingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>Mailing_Address_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>MailingStreet &amp; BR()
+&amp; MailingCity &amp; "," &amp; MailingState &amp; BR()
+&amp; MailingPostalCode &amp;BR()
+&amp; MailingCountry</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mailing Address Text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Mailing_Street_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(LEN(MailingStreet) = LEN(SUBSTITUTE(MailingStreet, MID($Setup.Global__c.CRLF__c,3,1),"")),
+  MailingStreet,
+  IF(LEN(MailingStreet) = LEN(SUBSTITUTE(MailingStreet, MID($Setup.Global__c.CRLF__c,3,1),""))+1,
+    LEFT(MailingStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1), MailingStreet)),
+    IF(LEN(MailingStreet) = LEN(SUBSTITUTE(MailingStreet, MID($Setup.Global__c.CRLF__c,3,1),""))+2,
+      LEFT(MailingStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1), MailingStreet)),
+      ""
+      )
+    )
+  )</formula>
+        <label>Mailing Street 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Mailing_Street_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(LEN(MailingStreet) = LEN(SUBSTITUTE(MailingStreet, MID($Setup.Global__c.CRLF__c,3,1),"")),
+  "",
+  IF(LEN(MailingStreet) = LEN(SUBSTITUTE(MailingStreet, MID($Setup.Global__c.CRLF__c,3,1),""))+1,
+    MID(MailingStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1),MailingStreet)+1, LEN(MailingStreet)),
+    IF(LEN(MailingStreet) = LEN(SUBSTITUTE(MailingStreet, MID($Setup.Global__c.CRLF__c,3,1),""))+2,
+      LEFT(SUBSTITUTE(MailingStreet, LEFT(MailingStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1),MailingStreet)), ""), FIND(MID($Setup.Global__c.CRLF__c,3,1),SUBSTITUTE(MailingStreet, LEFT(MailingStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1),MailingStreet)), "")))
+      ,""
+      )
+    )
+  )</formula>
+        <label>Mailing Street 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Mailing_Street_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(LEN(MailingStreet) = LEN(SUBSTITUTE(MailingStreet, MID($Setup.Global__c.CRLF__c,3,1),"")),
+  "",
+  IF(LEN(MailingStreet) = LEN(SUBSTITUTE(MailingStreet, MID($Setup.Global__c.CRLF__c,3,1),""))+1,
+    "",
+    IF(LEN(MailingStreet) = LEN(SUBSTITUTE(MailingStreet, MID($Setup.Global__c.CRLF__c,3,1),""))+2,
+        SUBSTITUTE(SUBSTITUTE(MailingStreet, LEFT(MailingStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1),MailingStreet)), ""),LEFT(SUBSTITUTE(MailingStreet, LEFT(MailingStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1),MailingStreet)), ""), FIND(MID($Setup.Global__c.CRLF__c,3,1),SUBSTITUTE(MailingStreet, LEFT(MailingStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1),MailingStreet)), ""))) ,"")
+      ,""
+      )
+    )
+  )</formula>
+        <label>Mailing Street 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Marital_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Marital Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Married</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Widow</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Widowed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Separated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Divorced</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields><fields>
+        <fullName>Membership_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Membership ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Metropolitan_Area__c</fullName>
+        <externalId>false</externalId>
+        <label>Metropolitan Area</label>
+        <picklist>
+            <picklistValues>
+                <fullName>New York</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Greater Los Angeles Area</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chicago</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Washington</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Greater San Francisco Bay Area</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Boston</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Philadelphia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dallas</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Miami</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Houston</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Atlanta</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Detroit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seattle</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Riverside, CA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phoenix</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Minneapolis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cleveland</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Denver</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Diego</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Portland, OR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Orlando, FL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>St. Louis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tampa, FL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Baltimore</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pittsburgh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sacramento, CA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Charlotte, NC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kansas City, MO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Salt Lake City</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Columbus, OH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Indianapolis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Las Vegas</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Antonio</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cincinnati, OH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Milwaukee, WI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields><fields>
+        <fullName>Middle_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Middle Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>MobilePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields><fields>
+        <fullName>Nick_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Nick Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>No_Valid_Address__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>No Valid Address</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>OtherAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>OtherPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>Other_Street_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(LEN(OtherStreet) = LEN(SUBSTITUTE(OtherStreet, MID($Setup.Global__c.CRLF__c,3,1),"")),
+  OtherStreet,
+  IF(LEN(OtherStreet) = LEN(SUBSTITUTE(OtherStreet, MID($Setup.Global__c.CRLF__c,3,1),""))+1,
+    LEFT(OtherStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1), OtherStreet)),
+    IF(LEN(OtherStreet) = LEN(SUBSTITUTE(OtherStreet, MID($Setup.Global__c.CRLF__c,3,1),""))+2,
+      LEFT(OtherStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1), OtherStreet)),
+      ""
+      )
+    )
+  )</formula>
+        <label>Other Street 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Other_Street_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(LEN(OtherStreet) = LEN(SUBSTITUTE(OtherStreet, MID($Setup.Global__c.CRLF__c,3,1),"")),
+  "",
+  IF(LEN(OtherStreet) = LEN(SUBSTITUTE(OtherStreet, MID($Setup.Global__c.CRLF__c,3,1),""))+1,
+    MID(OtherStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1),OtherStreet)+1, LEN(OtherStreet)),
+    IF(LEN(OtherStreet) = LEN(SUBSTITUTE(OtherStreet, MID($Setup.Global__c.CRLF__c,3,1),""))+2,
+      LEFT(SUBSTITUTE(OtherStreet, LEFT(OtherStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1),OtherStreet)), ""), FIND(MID($Setup.Global__c.CRLF__c,3,1),SUBSTITUTE(OtherStreet, LEFT(OtherStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1),OtherStreet)), "")))
+      ,""
+      )
+    )
+  )</formula>
+        <label>Other Street 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>Other_Street_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(LEN(OtherStreet) = LEN(SUBSTITUTE(OtherStreet, MID($Setup.Global__c.CRLF__c,3,1),"")),
+  "",
+  IF(LEN(OtherStreet) = LEN(SUBSTITUTE(OtherStreet, MID($Setup.Global__c.CRLF__c,3,1),""))+1,
+    "",
+    IF(LEN(OtherStreet) = LEN(SUBSTITUTE(OtherStreet, MID($Setup.Global__c.CRLF__c,3,1),""))+2,
+        SUBSTITUTE(SUBSTITUTE(OtherStreet, LEFT(OtherStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1),OtherStreet)), ""),LEFT(SUBSTITUTE(OtherStreet, LEFT(OtherStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1),OtherStreet)), ""), FIND(MID($Setup.Global__c.CRLF__c,3,1),SUBSTITUTE(OtherStreet, LEFT(OtherStreet, FIND(MID($Setup.Global__c.CRLF__c,3,1),OtherStreet)), ""))) ,"")
+      ,""
+      )
+    )
+  )</formula>
+        <label>Other Street 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>RE_Added_By__c</fullName>
+        <externalId>false</externalId>
+        <label>RE Added By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>RE_Addressee__c</fullName>
+        <externalId>false</externalId>
+        <label>RE Addressee</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>RE_Alias_1__c</fullName>
+        <externalId>false</externalId>
+        <label>RE Alias 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>RE_Alias_2__c</fullName>
+        <externalId>false</externalId>
+        <label>RE Alias 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>RE_Anonymous__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>RE Anonymous</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>RE_Changed_By__c</fullName>
+        <externalId>false</externalId>
+        <label>RE Changed By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>RE_Date_Added__c</fullName>
+        <externalId>false</externalId>
+        <label>RE Date Added</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>RE_Date_Changed__c</fullName>
+        <externalId>false</externalId>
+        <label>RE Date Changed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>RE_Deceased_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>RE Deceased Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>RE_Deceased__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>RE Deceased</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>RE_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>RE ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>RE_Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>RE Inactive</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>RE_Is_Solicitor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>RE Is Solicitor</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>RE_Primary_Addressee__c</fullName>
+        <externalId>false</externalId>
+        <label>RE Primary Addressee</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>RE_Salutation__c</fullName>
+        <externalId>false</externalId>
+        <label>RE Salutation</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>ReportsToId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields><fields>
+        <fullName>Send_Renewal_No_Mag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send Renewal/No Mag</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Send_Renewal_Send_Mag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send Renewal/Send Mag</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>Title</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>Use_Nickname__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check this box if the Informal Salutation should use Nickname rather than Lastname</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if the Informal Salutation should use Nickname rather than Lastname</inlineHelpText>
+        <label>Use Nickname</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields><fields>
+        <fullName>dlrs_Last_Membership_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Membership Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields><fields>
+        <fullName>dlrs_Last_Membership_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Membership Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>dlrs_Last_Membership_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Membership Level</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>dlrs_Last_Membership_Origin__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Membership Origin</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>dlrs_Membership_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Membership End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>dlrs_Membership_Join_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Membership Join Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields><fields>
+        <fullName>dlrs_Number_of_Memberships__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Memberships</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields><fields>
+        <fullName>dlrs_Total_Membership_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Membership Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields><compactLayoutAssignment>Community_User_Compact_Layout</compactLayoutAssignment><enableEnhancedLookup>true</enableEnhancedLookup><enableFeeds>true</enableFeeds><enableHistory>true</enableHistory><searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE4</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE3</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.EMAIL</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.ADDRESS2_STREET</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.ADDRESS2_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.ADDRESS2_STATE</customTabListAdditionalFields>
+        <listViewButtons>MassManager__Mass_Delete</listViewButtons>
+        <listViewButtons>MassManager__Mass_Update</listViewButtons>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.PHONE4</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.PHONE1</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.PHONE3</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.EMAIL</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.ADDRESS2_STREET</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.ADDRESS2_CITY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.ADDRESS2_STATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.ADDRESS2_ZIP</lookupDialogsAdditionalFields>
+        <lookupFilterFields>FULL_NAME</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupFilterFields>CONTACT.PHONE4</lookupFilterFields>
+        <lookupFilterFields>CONTACT.PHONE1</lookupFilterFields>
+        <lookupFilterFields>CONTACT.PHONE3</lookupFilterFields>
+        <lookupFilterFields>CONTACT.EMAIL</lookupFilterFields>
+        <lookupFilterFields>CONTACT.ADDRESS2_STREET</lookupFilterFields>
+        <lookupFilterFields>CONTACT.ADDRESS2_CITY</lookupFilterFields>
+        <lookupFilterFields>CONTACT.ADDRESS2_STATE</lookupFilterFields>
+        <lookupFilterFields>CONTACT.ADDRESS2_ZIP</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>CONTACT.FIRST_NAME</searchFilterFields>
+        <searchFilterFields>CONTACT.LAST_NAME</searchFilterFields>
+        <searchFilterFields>Nick_Name__c</searchFilterFields>
+        <searchFilterFields>CONTACT.ADDRESS2_STREET</searchFilterFields>
+        <searchFilterFields>CONTACT.ADDRESS2_CITY</searchFilterFields>
+        <searchFilterFields>CONTACT.PHONE1</searchFilterFields>
+        <searchFilterFields>CONTACT.EMAIL</searchFilterFields>
+        <searchFilterFields>Membership_ID__c</searchFilterFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE4</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE3</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.ADDRESS2_STREET</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.ADDRESS2_CITY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.ADDRESS2_STATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.ADDRESS2_ZIP</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Membership_ID__c</searchResultsAdditionalFields>
+    </searchLayouts><sharingModel>ControlledByParent</sharingModel><listViews>
+        <fullName>AllContacts</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Contacts</label>
+    </listViews><listViews>
+        <fullName>BirthdaysThisMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.BIRTHDATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Birthdays This Month</label>
+    </listViews><listViews>
+        <fullName>MyContacts</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Contacts</label>
+    </listViews><listViews>
+        <fullName>NewLastWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_WEEK</value>
+        </filters>
+        <label>New Last Week</label>
+    </listViews><listViews>
+        <fullName>NewThisWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews><validationRules>
+        <fullName>Contact_Preferred_Email</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISPICKVAL( npe01__Preferred_Email__c ,""),
+OR(
+LEN(npe01__AlternateEmail__c  )&gt;0,
+LEN(npe01__WorkEmail__c )&gt;0,
+LEN(npe01__HomeEmail__c  )&gt;0
+)
+)</errorConditionFormula>
+        <errorDisplayField>npe01__Preferred_Email__c</errorDisplayField>
+        <errorMessage>Please select a Preferred Email</errorMessage>
+    </validationRules><validationRules>
+        <fullName>Contact_Preferred_Phone</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ ISPICKVAL(npe01__PreferredPhone__c ,""),
+OR(
+ LEN(MobilePhone)&gt;0,
+ LEN( npe01__WorkPhone__c)&gt;0,
+ LEN( OtherPhone )&gt;0
+)
+)</errorConditionFormula>
+        <errorDisplayField>npe01__PreferredPhone__c</errorDisplayField>
+        <errorMessage>Please select a Preferred Phone</errorMessage>
+    </validationRules><webLinks>
+        <fullName>MA_MapIt_a0V36000004lvLVEAY</fullName>
+        <availability>online</availability>
+        <description>Maps this Contact with selected tooltips</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Map It</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/sma__mapanything?recordId={!Contact.Id}&amp;baseObjectId=a0V36000004lvLVEAY&amp;tooltipField=Name&amp;tooltipField2=Title&amp;tooltipField3=Phone&amp;tooltipField4=Email&amp;color=%2366FF00</url>
+    </webLinks></CustomObject>

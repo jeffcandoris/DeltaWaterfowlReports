@@ -1,0 +1,12 @@
+Hi {!Receiving_User.FirstName},
+
+Welcome to Delta Waterfowl!
+
+Your username: {!Receiving_User.Username}
+
+In order to become a member please visit, www.deltawaterfowl.org/memberships
+            
+Thank you,
+
+Delta Waterfowl
+The Duck Hunter's Organization

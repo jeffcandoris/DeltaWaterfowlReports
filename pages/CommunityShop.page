@@ -1,0 +1,79 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false">
+  <style>
+    #container {
+      display: none;
+    }
+    #lightning-footer {
+      background-color: #222A44;
+      padding: 40px 20px;
+      border-top: solid;
+      border-top-color: #2271a8;
+      border-top-width: 15px;
+    }
+    .footer-logo {
+      width: 125px;
+      padding: 0;
+    }
+    hr {
+      margin: 10px 0 10px 0;
+    }
+    .get-in-touch {
+      color: #E6B706;
+      font-size: 20px;
+      margin: 0;
+    }
+    .get-in-touch-sub {
+      color: white;
+      margin: 0;
+    }
+    .footer-columns {
+      padding: 0 3% !important;
+    }
+    .top-bar {
+      height: 10px;
+      background-color: blue;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"></link>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+  <apex:includeLightning />
+
+<div id="lightning-header" style="width:100%;"></div>
+
+  <div id="container">
+    <div>
+      <div>Hello World</div>
+    </div>
+  </div>
+
+
+<div id="lightning-footer" style="width:100%;"></div>
+
+   <script>
+    $Lightning.use("c:CommunityApp", function() {
+      $Lightning.createComponent("c:CommunityHeader",
+        { label : "" },
+        "lightning-header",
+        function(cmp) {
+          $(function() {
+            $("#container").show();
+          });
+        });
+    });
+
+  $Lightning.use("c:CommunityApp", function() {
+      $Lightning.createComponent("c:Communityfooter",
+        { label : "" },
+        "lightning-footer",
+        function(cmp) {
+          $(function() {
+            $("#container").show();
+          });
+        });
+    });
+
+  </script>
+</apex:page>
