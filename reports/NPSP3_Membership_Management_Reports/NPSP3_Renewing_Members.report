@@ -25,7 +25,7 @@
         <field>Contact.dlrs_Last_Membership_Level__c</field>
     </columns>
     <columns>
-        <field>Contact.Contact.dlrs_Last_Membership_Origin__c</field>
+        <field>Contact.dlrs_Last_Membership_Origin__c</field>
     </columns>
     <columns>
         <field>Contact.dlrs_Number_of_Memberships__c</field>
