@@ -124,8 +124,8 @@
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$CreatedDate</column>
-            <operator>greaterOrEqual</operator>
-            <value>1/1/2018 12:00 AM</value>
+            <operator>equals</operator>
+            <value>2/26/2018 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$CreatedBy</column>
@@ -139,8 +139,8 @@
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$Validated_Date__c</column>
-            <operator>greaterOrEqual</operator>
-            <value>1/1/2018</value>
+            <operator>equals</operator>
+            <value>2/26/2018</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.npe01__OppPayment__r$npe01__Paid__c</column>
@@ -149,8 +149,8 @@
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.npe01__OppPayment__r$LastModifiedDate</column>
-            <operator>greaterOrEqual</operator>
-            <value>1/1/2018 12:00 AM</value>
+            <operator>equals</operator>
+            <value>2/26/2018 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$Name</column>

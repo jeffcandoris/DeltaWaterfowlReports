@@ -89,11 +89,6 @@
             <operator>notEqual</operator>
             <value>Closed Receivable - Closed/Won - 100%</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Non_Budget_Relieving__c</column>
-            <operator>equals</operator>
-            <value>0</value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -121,6 +116,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>npe01__OppPayment__c.npe01__Payment_Date__c</dateColumn>
-        <interval>INTERVAL_CURFY</interval>
+        <endDate>2018-02-28</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-03-01</startDate>
     </timeFrameFilter>
 </Report>

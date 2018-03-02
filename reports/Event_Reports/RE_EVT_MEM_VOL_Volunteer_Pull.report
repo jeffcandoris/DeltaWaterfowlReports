@@ -15,7 +15,7 @@
     <currency>USD</currency>
     <filter>
         <criteriaItems>
-            <column>Account$Contact.dlrs_Last_Membership_Origin__c</column>
+            <column>Account$npo02__LastMembershipOrigin__c</column>
             <operator>equals</operator>
             <value>EVT-MEM-VOL</value>
         </criteriaItems>

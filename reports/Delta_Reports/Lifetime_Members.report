@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>Contact.dlrs_Last_Membership_Level__c</field>
+        <field>Contact.npo02__LastMembershipLevel__c</field>
     </columns>
     <columns>
         <field>SALUTATION</field>
@@ -75,7 +75,7 @@
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Last_Membership_Level__c</column>
+            <column>Contact.npo02__LastMembershipLevel__c</column>
             <operator>equals</operator>
             <value>Lifetime Member</value>
         </criteriaItems>
@@ -89,10 +89,10 @@
     <reportType>ContactList</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Contact.dlrs_Last_Membership_Level__c</sortColumn>
+    <sortColumn>Contact.npo02__LastMembershipLevel__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>Contact.dlrs_Membership_End_Date__c</dateColumn>
+        <dateColumn>Contact.npo02__MembershipEndDate__c</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

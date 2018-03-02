@@ -4,7 +4,7 @@
         <field>Contact.Membership_ID__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Membership_End_Date__c</field>
+        <field>Contact.npo02__MembershipEndDate__c</field>
     </columns>
     <columns>
         <field>Account.npo02__MembershipEndDate__c</field>
@@ -53,7 +53,7 @@
     <filter>
         <booleanFilter>1 or 2 or 3 or 4</booleanFilter>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_End_Date__c</column>
+            <column>Contact.npo02__MembershipEndDate__c</column>
             <operator>greaterOrEqual</operator>
             <value>12/31/2017</value>
         </criteriaItems>

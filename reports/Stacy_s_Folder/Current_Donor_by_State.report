@@ -43,7 +43,7 @@
         <field>Account.npo02__LastMembershipLevel__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Last_Membership_Level__c</field>
+        <field>Contact.npo02__LastMembershipLevel__c</field>
     </columns>
     <columns>
         <field>Contact.npsp__Deceased__c</field>
@@ -57,22 +57,22 @@
         <criteriaItems>
             <column>ADDRESS2_STATE</column>
             <operator>contains</operator>
-            <value>Mississippi,Alabama,AL,MS</value>
+            <value>TN,AR</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Last_Payment_Date_all_stages__c</column>
             <operator>greaterOrEqual</operator>
-            <value>5/1/2016</value>
+            <value>9/1/2016</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_End_Date__c</column>
+            <column>Contact.npo02__MembershipEndDate__c</column>
             <operator>greaterOrEqual</operator>
-            <value>5/1/2017</value>
+            <value>9/1/2017</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_End_Date__c</column>
+            <column>Contact.npo02__MembershipEndDate__c</column>
             <operator>greaterOrEqual</operator>
-            <value>5/1/2017</value>
+            <value>9/1/2017</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

@@ -46,7 +46,7 @@
         <field>ADDRESS2_COUNTRY</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Last_Membership_Level__c</field>
+        <field>Contact.npo02__LastMembershipLevel__c</field>
     </columns>
     <columns>
         <field>Account.npo02__LastMembershipLevel__c</field>

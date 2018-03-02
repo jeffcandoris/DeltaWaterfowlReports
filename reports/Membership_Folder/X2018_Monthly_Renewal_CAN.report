@@ -114,11 +114,11 @@
         <criteriaItems>
             <column>ADDRESS2_COUNTRY</column>
             <operator>contains</operator>
-            <value>united states</value>
+            <value>canada</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>2018 Monthly Renewal US draft v.4</name>
+    <name>2018 Monthly Renewal CAN</name>
     <params>
         <name>co</name>
         <value>1</value>

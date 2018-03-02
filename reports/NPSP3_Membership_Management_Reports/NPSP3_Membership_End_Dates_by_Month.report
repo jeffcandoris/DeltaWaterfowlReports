@@ -11,7 +11,7 @@
         <chartType>VerticalColumn</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Contact.dlrs_Membership_End_Date__c</groupingColumn>
+        <groupingColumn>Contact.npo02__MembershipEndDate__c</groupingColumn>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -34,25 +34,25 @@
         <field>LAST_NAME</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Last_Membership_Amount__c</field>
+        <field>Contact.npo02__LastMembershipAmount__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Total_Membership_Amount__c</field>
+        <field>Contact.npo02__TotalMembershipOppAmount__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Last_Membership_Date__c</field>
+        <field>Contact.npo02__LastMembershipDate__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Membership_Join_Date__c</field>
+        <field>Contact.npo02__MembershipJoinDate__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Last_Membership_Level__c</field>
+        <field>Contact.npo02__LastMembershipLevel__c</field>
     </columns>
     <columns>
-        <field>Contact.Contact.dlrs_Last_Membership_Origin__c</field>
+        <field>Contact.npo02__LastMembershipOrigin__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Number_of_Memberships__c</field>
+        <field>Contact.npo02__NumberOfMembershipOpps__c</field>
     </columns>
     <columns>
         <field>TITLE</field>
@@ -93,12 +93,12 @@
     <description>All memberships with end dates grouped by month</description>
     <filter>
         <criteriaItems>
-            <column>Contact.dlrs_Last_Membership_Amount__c</column>
+            <column>Contact.npo02__LastMembershipAmount__c</column>
             <operator>greaterThan</operator>
             <value>USD 0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_End_Date__c</column>
+            <column>Contact.npo02__MembershipEndDate__c</column>
             <operator>greaterThan</operator>
             <value>TODAY</value>
         </criteriaItems>
@@ -106,7 +106,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>
-        <field>Contact.dlrs_Membership_End_Date__c</field>
+        <field>Contact.npo02__MembershipEndDate__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Membership End Dates by Month</name>

@@ -108,7 +108,7 @@
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Last_Membership_Level__c</column>
+            <column>Contact.npo02__LastMembershipLevel__c</column>
             <operator>notEqual</operator>
             <value>Youth</value>
         </criteriaItems>

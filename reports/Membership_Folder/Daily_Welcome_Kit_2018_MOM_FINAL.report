@@ -125,7 +125,7 @@
         <criteriaItems>
             <column>Opportunity$CreatedDate</column>
             <operator>equals</operator>
-            <value>TODAY</value>
+            <value>YESTERDAY</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$CreatedBy</column>
@@ -140,7 +140,7 @@
         <criteriaItems>
             <column>Opportunity$Validated_Date__c</column>
             <operator>equals</operator>
-            <value>TODAY</value>
+            <value>YESTERDAY</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

@@ -88,8 +88,8 @@
         <field>Opportunity$Market_Source_Code__c</field>
     </columns>
     <currency>USD</currency>
-    <description>Daily welcome kit report beginning March 1, 2017</description>
     <filter>
+        <booleanFilter>((1 AND 2 AND 3 AND 4)) AND ((5 AND 6) or (7 AND 8))</booleanFilter>
         <criteriaItems>
             <column>Opportunity$Letter_Code__c</column>
             <operator>equals</operator>
@@ -110,15 +110,34 @@
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$CreatedDate</column>
+            <operator>equals</operator>
+            <value>YESTERDAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$CreatedBy</column>
+            <operator>notContain</operator>
+            <value>guest,candoris</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Name</column>
+            <operator>contains</operator>
+            <value>online</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Validated_Date__c</column>
+            <operator>equals</operator>
+            <value>YESTERDAY</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>Daily Welcome Kit Report 2017 - MOM</name>
+    <name>Daily Welcome Kit Report 2017 MOM FINAL</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
     <reportType>Opportunities_with_Primary_Campaign_Fields__c</reportType>
-    <roleHierarchyFilter>System_Administrator</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <sortColumn>Opportunity$Campaign.Name</sortColumn>
@@ -126,6 +145,5 @@
     <timeFrameFilter>
         <dateColumn>Opportunity$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2017-05-01</startDate>
     </timeFrameFilter>
 </Report>
