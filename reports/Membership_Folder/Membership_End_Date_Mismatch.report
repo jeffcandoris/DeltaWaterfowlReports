@@ -7,7 +7,7 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
-        <field>Contact.npo02__MembershipEndDate__c</field>
+        <field>Contact.dlrs_Membership_End_Date__c</field>
     </columns>
     <columns>
         <field>Account.npo02__MembershipEndDate__c</field>
@@ -52,7 +52,7 @@
     <description>*FOR AMY*  Use this export to identify memberships that were entered under different Account Name / Primary Contact combinations.  Use &quot;Find Mismatched End Dates&quot; for export instructions.</description>
     <filter>
         <criteriaItems>
-            <column>Contact.npo02__MembershipEndDate__c</column>
+            <column>Contact.dlrs_Membership_End_Date__c</column>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>

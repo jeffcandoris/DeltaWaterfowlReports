@@ -31,7 +31,7 @@
         <field>ADDRESS2_ZIP</field>
     </columns>
     <columns>
-        <field>Contact.npo02__MembershipEndDate__c</field>
+        <field>Contact.dlrs_Membership_End_Date__c</field>
     </columns>
     <columns>
         <field>Account.npo02__MembershipEndDate__c</field>
@@ -41,7 +41,7 @@
     <filter>
         <booleanFilter>(1 or 2) AND 3</booleanFilter>
         <criteriaItems>
-            <column>Contact.npo02__MembershipEndDate__c</column>
+            <column>Contact.dlrs_Membership_End_Date__c</column>
             <operator>greaterOrEqual</operator>
             <value>5/27/2017</value>
         </criteriaItems>
@@ -65,7 +65,7 @@
     <reportType>ContactList</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Contact.npo02__MembershipEndDate__c</sortColumn>
+    <sortColumn>Contact.dlrs_Membership_End_Date__c</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>

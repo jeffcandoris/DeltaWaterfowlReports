@@ -49,10 +49,10 @@
         <field>ADDRESS2_COUNTRY</field>
     </columns>
     <columns>
-        <field>Contact.npo02__LastMembershipLevel__c</field>
+        <field>Contact.dlrs_Last_Membership_Level__c</field>
     </columns>
     <columns>
-        <field>Contact.npo02__MembershipEndDate__c</field>
+        <field>Contact.dlrs_Membership_End_Date__c</field>
     </columns>
     <currency>USD</currency>
     <filter>

@@ -4,7 +4,7 @@
         <field>Contact.Membership_ID__c</field>
     </columns>
     <columns>
-        <field>Contact.npo02__MembershipEndDate__c</field>
+        <field>Contact.dlrs_Membership_End_Date__c</field>
     </columns>
     <columns>
         <field>Account.npo02__MembershipEndDate__c</field>
@@ -59,12 +59,12 @@
             <value>LAST_N_DAYS:578</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.npo02__MembershipEndDate__c</column>
+            <column>Contact.dlrs_Membership_End_Date__c</column>
             <operator>lessOrEqual</operator>
             <value>LAST_N_DAYS:518</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.npo02__MembershipEndDate__c</column>
+            <column>Contact.dlrs_Membership_End_Date__c</column>
             <operator>greaterOrEqual</operator>
             <value>LAST_N_DAYS:578</value>
         </criteriaItems>

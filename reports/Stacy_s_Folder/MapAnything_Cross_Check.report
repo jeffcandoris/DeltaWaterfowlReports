@@ -28,13 +28,13 @@
         <field>Account.npo02__LastMembershipDate__c</field>
     </columns>
     <columns>
-        <field>Contact.npo02__LastMembershipDate__c</field>
+        <field>Contact.dlrs_Last_Membership_Date__c</field>
     </columns>
     <columns>
         <field>Account.npo02__MembershipEndDate__c</field>
     </columns>
     <columns>
-        <field>Contact.npo02__MembershipEndDate__c</field>
+        <field>Contact.dlrs_Membership_End_Date__c</field>
     </columns>
     <columns>
         <field>Account.npo02__LastCloseDate__c</field>
