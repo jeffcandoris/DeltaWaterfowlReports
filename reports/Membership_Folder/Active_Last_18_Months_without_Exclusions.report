@@ -4,16 +4,16 @@
         <field>Contact.Membership_ID__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Membership_End_Date__c</field>
+        <field>Contact.Membership_End_Date__c</field>
     </columns>
     <columns>
         <field>Account.npo02__MembershipEndDate__c</field>
     </columns>
     <columns>
-        <field>Account.Last_Opp_Date_closed_won__c</field>
+        <field>Account.Last_Opportunity_Date__c</field>
     </columns>
     <columns>
-        <field>Account.Last_Payment_Date_all_stages__c</field>
+        <field>Account.Last_Payment_Date_all_stages_2__c</field>
     </columns>
     <columns>
         <field>Contact.Last_Opp_Amount__c</field>
@@ -53,7 +53,7 @@
     <filter>
         <booleanFilter>1 or 2 or 3 or 4</booleanFilter>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_End_Date__c</column>
+            <column>Contact.Membership_End_Date__c</column>
             <operator>greaterOrEqual</operator>
             <value>12/31/2017</value>
         </criteriaItems>
@@ -63,12 +63,12 @@
             <value>12/31/2017</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Last_Opp_Date_closed_won__c</column>
+            <column>Account.Last_Opportunity_Date__c</column>
             <operator>greaterOrEqual</operator>
             <value>6/30/2016</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Last_Payment_Date_all_stages__c</column>
+            <column>Account.Last_Payment_Date_all_stages_2__c</column>
             <operator>greaterOrEqual</operator>
             <value>6/30/2016</value>
         </criteriaItems>

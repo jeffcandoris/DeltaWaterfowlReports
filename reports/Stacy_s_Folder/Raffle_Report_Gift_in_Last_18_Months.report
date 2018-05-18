@@ -110,7 +110,7 @@
             <value>States</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Last_Membership_Level__c</column>
+            <column>Contact.Last_Membership_Level__c</column>
             <operator>notEqual</operator>
             <value>youth</value>
         </criteriaItems>

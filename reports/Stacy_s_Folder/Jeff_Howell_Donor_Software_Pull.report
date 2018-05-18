@@ -7,7 +7,7 @@
         <field>Account.Contacts$Name</field>
     </columns>
     <columns>
-        <field>Account$First_Opp_Date_closed_won__c</field>
+        <field>Account$First_Opportunity_Date__c</field>
     </columns>
     <currency>USD</currency>
     <filter>
@@ -32,7 +32,7 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>Account$First_Opp_Date_closed_won__c</dateColumn>
+        <dateColumn>Account$First_Opportunity_Date__c</dateColumn>
         <endDate>2018-03-28</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2016-03-01</startDate>

@@ -88,17 +88,17 @@
             <value>States</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_End_Date__c</column>
+            <column>Contact.Membership_End_Date__c</column>
             <operator>greaterOrEqual</operator>
             <value>11/1/2017</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_Join_Date__c</column>
+            <column>Contact.Membership_Join_Date__c</column>
             <operator>lessOrEqual</operator>
             <value>3/31/2018</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Last_Membership_Level__c</column>
+            <column>Contact.Last_Membership_Level__c</column>
             <operator>notEqual</operator>
             <value>youth</value>
         </criteriaItems>

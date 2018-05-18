@@ -61,7 +61,7 @@
     <sortColumn>Contact.Membership_ID__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>Contact.dlrs_Membership_Join_Date__c</dateColumn>
+        <dateColumn>Contact.Membership_Join_Date__c</dateColumn>
         <endDate>2018-02-28</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2018-02-01</startDate>

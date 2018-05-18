@@ -37,10 +37,10 @@
         <field>Account.Primary_Contact_Email__c</field>
     </columns>
     <columns>
-        <field>Account.Last_Payment_Date_all_stages__c</field>
+        <field>Account.Last_Payment_Date_all_stages_2__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Last_Membership_Level__c</field>
+        <field>Contact.Last_Membership_Level__c</field>
     </columns>
     <columns>
         <field>Contact.npsp__Deceased__c</field>
@@ -57,17 +57,17 @@
             <value>ND</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Last_Payment_Date_all_stages__c</column>
+            <column>Account.Last_Payment_Date_all_stages_2__c</column>
             <operator>greaterOrEqual</operator>
             <value>10/1/2016</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_End_Date__c</column>
+            <column>Contact.Membership_End_Date__c</column>
             <operator>greaterOrEqual</operator>
             <value>10/1/2017</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_End_Date__c</column>
+            <column>Contact.Membership_End_Date__c</column>
             <operator>greaterOrEqual</operator>
             <value>10/1/2017</value>
         </criteriaItems>

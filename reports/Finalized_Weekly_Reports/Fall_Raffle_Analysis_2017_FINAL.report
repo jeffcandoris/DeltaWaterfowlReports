@@ -35,10 +35,10 @@
         <field>Opportunity$Account.npo02__MembershipEndDate__c</field>
     </columns>
     <columns>
-        <field>Opportunity$Account.First_Opp_Date_closed_won__c</field>
+        <field>Opportunity$Account.First_Opportunity_Date__c</field>
     </columns>
     <columns>
-        <field>Opportunity$Account.Last_Opp_Date_closed_won__c</field>
+        <field>Opportunity$Account.Last_Opportunity_Date__c</field>
     </columns>
     <columns>
         <field>Opportunity$Account.npo02__LastMembershipLevel__c</field>

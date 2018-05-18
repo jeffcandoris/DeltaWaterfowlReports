@@ -32,10 +32,10 @@
         <field>Opportunity$npsp__Primary_Contact__c.MailingPostalCode</field>
     </columns>
     <columns>
-        <field>Opportunity$Account.First_Opp_Date_closed_won__c</field>
+        <field>Opportunity$Account.First_Opportunity_Date__c</field>
     </columns>
     <columns>
-        <field>Opportunity$Account.Last_Opp_Date_closed_won__c</field>
+        <field>Opportunity$Account.Last_Opportunity_Date__c</field>
     </columns>
     <columns>
         <field>Opportunity$Market_Source_Code__c</field>
@@ -47,10 +47,10 @@
         <field>Opportunity$Account.First_Opp_Dept__c</field>
     </columns>
     <columns>
-        <field>Opportunity$npsp__Primary_Contact__c.dlrs_Membership_End_Date__c</field>
+        <field>Opportunity$npsp__Primary_Contact__c.Membership_End_Date__c</field>
     </columns>
     <columns>
-        <field>Opportunity$npsp__Primary_Contact__c.dlrs_Last_Membership_Level__c</field>
+        <field>Opportunity$npsp__Primary_Contact__c.Last_Membership_Level__c</field>
     </columns>
     <currency>USD</currency>
     <filter>

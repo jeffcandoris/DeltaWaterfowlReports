@@ -55,16 +55,16 @@
         <field>ADDRESS2_COUNTRY</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Last_Membership_Level__c</field>
+        <field>Contact.Last_Membership_Level__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Membership_End_Date__c</field>
+        <field>Contact.Membership_End_Date__c</field>
     </columns>
     <columns>
         <field>Contact.First_Opp_Date__c</field>
     </columns>
     <columns>
-        <field>Account.First_Opp_Date_closed_won__c</field>
+        <field>Account.First_Opportunity_Date__c</field>
     </columns>
     <columns>
         <field>Account.First_Opp_Dept__c</field>
@@ -73,13 +73,13 @@
         <field>Account.npo02__LastCloseDate__c</field>
     </columns>
     <columns>
-        <field>Account.Last_Payment_Date_all_stages__c</field>
+        <field>Account.Last_Payment_Date_all_stages_2__c</field>
     </columns>
     <columns>
-        <field>Account.dlrs_Total_of_Opps_closed_won__c</field>
+        <field>Account.Total_Num_of_Opps_closed_won__c</field>
     </columns>
     <columns>
-        <field>Account.Total_of_Paid_Payments_all_stages__c</field>
+        <field>Account.Total_Num_of_Paid_Payments_all_stages__c</field>
     </columns>
     <currency>USD</currency>
     <filter>

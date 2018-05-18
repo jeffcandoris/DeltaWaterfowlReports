@@ -4,10 +4,10 @@
         <field>Contact.Membership_ID__c</field>
     </columns>
     <columns>
-        <field>Account.Last_Payment_Date_all_stages__c</field>
+        <field>Account.Last_Payment_Date_all_stages_2__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Membership_End_Date__c</field>
+        <field>Contact.Membership_End_Date__c</field>
     </columns>
     <columns>
         <field>Account.npo02__MembershipEndDate__c</field>
@@ -65,7 +65,7 @@
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Last_Payment_Date_all_stages__c</column>
+            <column>Account.Last_Payment_Date_all_stages_2__c</column>
             <operator>equals</operator>
             <value>LAST_N_DAYS:548</value>
         </criteriaItems>
@@ -89,7 +89,7 @@
     <reportType>ContactList</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Account.Last_Payment_Date_all_stages__c</sortColumn>
+    <sortColumn>Account.Last_Payment_Date_all_stages_2__c</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>

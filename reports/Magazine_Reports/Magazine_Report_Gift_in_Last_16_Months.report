@@ -47,7 +47,7 @@
     </columns>
     <crossFilters>
         <criteriaItems>
-            <column>Last_Payment_Date__c</column>
+            <column>Last_Payment_Date2__c</column>
             <operator>greaterOrEqual</operator>
             <value>1/1/2017</value>
         </criteriaItems>

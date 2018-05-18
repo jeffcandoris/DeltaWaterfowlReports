@@ -19,7 +19,7 @@
         <field>Account.Contacts.Attributes__r$Date__c</field>
     </columns>
     <columns>
-        <field>Account$Last_Payment_Date_all_stages__c</field>
+        <field>Account$Last_Payment_Date_all_stages_2__c</field>
     </columns>
     <columns>
         <field>Account.Contacts.Attributes__r$Account__c</field>

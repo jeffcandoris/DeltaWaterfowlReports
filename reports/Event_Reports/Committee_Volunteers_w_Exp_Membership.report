@@ -7,7 +7,7 @@
         <field>FK_$Contact.Membership_ID__c</field>
     </columns>
     <columns>
-        <field>FK_$Contact.dlrs_Membership_End_Date__c</field>
+        <field>FK_$Contact.Membership_End_Date__c</field>
     </columns>
     <columns>
         <field>FK_CNTC_FIRST_NAME</field>
@@ -41,7 +41,7 @@
             <value>Current</value>
         </criteriaItems>
         <criteriaItems>
-            <column>FK_$Contact.dlrs_Membership_End_Date__c</column>
+            <column>FK_$Contact.Membership_End_Date__c</column>
             <operator>lessOrEqual</operator>
             <value>TODAY</value>
         </criteriaItems>

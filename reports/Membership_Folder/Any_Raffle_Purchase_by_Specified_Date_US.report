@@ -40,7 +40,7 @@
         <field>Contact.Development_Team_Solicit__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Last_Membership_Level__c</field>
+        <field>Contact.Last_Membership_Level__c</field>
     </columns>
     <columns>
         <field>ADDRESS2_COUNTRY</field>
@@ -110,7 +110,7 @@
             <value>@</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Last_Membership_Level__c</column>
+            <column>Contact.Last_Membership_Level__c</column>
             <operator>notEqual</operator>
             <value>youth</value>
         </criteriaItems>

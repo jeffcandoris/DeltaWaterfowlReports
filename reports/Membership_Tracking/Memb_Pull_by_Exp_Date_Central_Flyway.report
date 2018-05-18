@@ -63,7 +63,7 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>Contact.dlrs_Membership_End_Date__c</dateColumn>
+        <dateColumn>Contact.Membership_End_Date__c</dateColumn>
         <endDate>2231-04-30</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2017-11-01</startDate>

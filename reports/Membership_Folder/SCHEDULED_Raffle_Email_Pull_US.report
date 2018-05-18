@@ -40,16 +40,16 @@
         <field>Account.Primary_Contact_Email__c</field>
     </columns>
     <columns>
-        <field>Account.Last_Opp_Date_closed_won__c</field>
+        <field>Account.Last_Opportunity_Date__c</field>
     </columns>
     <columns>
-        <field>Account.Last_Payment_Date_all_stages__c</field>
+        <field>Account.Last_Payment_Date_all_stages_2__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Membership_Join_Date__c</field>
+        <field>Contact.Membership_Join_Date__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Membership_End_Date__c</field>
+        <field>Contact.Membership_End_Date__c</field>
     </columns>
     <columns>
         <field>Contact.pi__pardot_hard_bounced__c</field>
@@ -141,32 +141,32 @@
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_Join_Date__c</column>
+            <column>Contact.Membership_Join_Date__c</column>
             <operator>lessThan</operator>
             <value>LAST_N_WEEKS:6</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_End_Date__c</column>
+            <column>Contact.Membership_End_Date__c</column>
             <operator>greaterOrEqual</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Last_Payment_Date_all_stages__c</column>
+            <column>Account.Last_Payment_Date_all_stages_2__c</column>
             <operator>equals</operator>
             <value>LAST_N_DAYS:548</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_Join_Date__c</column>
+            <column>Contact.Membership_Join_Date__c</column>
             <operator>lessThan</operator>
             <value>LAST_N_WEEKS:6</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_End_Date__c</column>
+            <column>Contact.Membership_End_Date__c</column>
             <operator>greaterOrEqual</operator>
             <value>TODAY</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Last_Membership_Level__c</column>
+            <column>Contact.Last_Membership_Level__c</column>
             <operator>notContain</operator>
             <value>youth</value>
         </criteriaItems>
@@ -180,7 +180,7 @@
     <reportType>ContactList</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Contact.dlrs_Membership_End_Date__c</sortColumn>
+    <sortColumn>Contact.Membership_End_Date__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>

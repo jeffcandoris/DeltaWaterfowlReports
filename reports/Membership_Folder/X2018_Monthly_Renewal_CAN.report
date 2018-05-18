@@ -46,16 +46,16 @@
         <field>PHONE1</field>
     </columns>
     <columns>
-        <field>Account.First_Opp_Date_closed_won__c</field>
+        <field>Account.First_Opportunity_Date__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Last_Membership_Level__c</field>
+        <field>Contact.Last_Membership_Level__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Membership_End_Date__c</field>
+        <field>Contact.Membership_End_Date__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Last_Membership_Amount__c</field>
+        <field>Contact.Last_Membership_Amount__c</field>
     </columns>
     <crossFilters>
         <criteriaItems>
@@ -129,7 +129,7 @@
     <sortColumn>ACCOUNT.NAME</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>Contact.dlrs_Membership_End_Date__c</dateColumn>
+        <dateColumn>Contact.Membership_End_Date__c</dateColumn>
         <endDate>2018-08-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2018-08-01</startDate>

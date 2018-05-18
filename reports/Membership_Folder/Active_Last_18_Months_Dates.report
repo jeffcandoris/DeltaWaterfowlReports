@@ -4,13 +4,13 @@
         <field>Contact.Membership_ID__c</field>
     </columns>
     <columns>
-        <field>Contact.dlrs_Membership_End_Date__c</field>
+        <field>Contact.Membership_End_Date__c</field>
     </columns>
     <columns>
         <field>Account.npo02__MembershipEndDate__c</field>
     </columns>
     <columns>
-        <field>Account.Last_Payment_Date_all_stages__c</field>
+        <field>Account.Last_Payment_Date_all_stages_2__c</field>
     </columns>
     <columns>
         <field>Contact.First_Opp_Date__c</field>
@@ -49,22 +49,22 @@
     <filter>
         <booleanFilter>(((1 AND 2 and 7) or (3 AND 4) or (5 AND 6)))</booleanFilter>
         <criteriaItems>
-            <column>Account.Last_Payment_Date_all_stages__c</column>
+            <column>Account.Last_Payment_Date_all_stages_2__c</column>
             <operator>lessOrEqual</operator>
             <value>2/28/2017</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Last_Payment_Date_all_stages__c</column>
+            <column>Account.Last_Payment_Date_all_stages_2__c</column>
             <operator>greaterOrEqual</operator>
             <value>8/30/2015</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_End_Date__c</column>
+            <column>Contact.Membership_End_Date__c</column>
             <operator>lessOrEqual</operator>
             <value>2/28/2017</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Membership_End_Date__c</column>
+            <column>Contact.Membership_End_Date__c</column>
             <operator>greaterOrEqual</operator>
             <value>8/30/2015</value>
         </criteriaItems>
@@ -87,7 +87,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Last_Opp_Date_closed_won__c</field>
+        <field>Account.Last_Opportunity_Date__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Active Last 18 Months Dates</name>

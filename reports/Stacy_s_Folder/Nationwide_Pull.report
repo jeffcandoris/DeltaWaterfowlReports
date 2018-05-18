@@ -59,7 +59,7 @@
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.dlrs_Last_Membership_Level__c</column>
+            <column>Contact.Last_Membership_Level__c</column>
             <operator>notEqual</operator>
             <value>Youth</value>
         </criteriaItems>
@@ -99,7 +99,7 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>Contact.dlrs_Membership_End_Date__c</dateColumn>
+        <dateColumn>Contact.Membership_End_Date__c</dateColumn>
         <endDate>2019-02-28</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2017-01-01</startDate>
