@@ -14,7 +14,7 @@
         <field>Contact.OpportunityContactRoles*Opportunity$npe01__Amount_Outstanding__c</field>
     </columns>
     <columns>
-        <field>Contact.OpportunityContactRoles*Opportunity$Last_Payment_Date2__c</field>
+        <field>Contact.OpportunityContactRoles*Opportunity.Last_Payment_Date2__c</field>
     </columns>
     <columns>
         <field>Contact.OpportunityContactRoles*Opportunity$Last_Payment_Amount__c</field>
