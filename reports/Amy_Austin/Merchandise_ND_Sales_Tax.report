@@ -31,7 +31,7 @@
     <currency>USD</currency>
     <description>Report ND merchandise sales tax from the Delta Store to Tim.</description>
     <filter>
-        <booleanFilter>(1 or 2) AND 3</booleanFilter>
+        <booleanFilter>(1 or 2 or 4) AND 3</booleanFilter>
         <criteriaItems>
             <column>Account.Contacts.npsp__Opportunities__r$RecordType</column>
             <operator>equals</operator>
@@ -47,6 +47,11 @@
             <operator>equals</operator>
             <value>nd</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.npsp__Opportunities__r$Letter_Code__c</column>
+            <operator>equals</operator>
+            <value>Calendar</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>Merchandise ND Sales Tax</name>
@@ -58,7 +63,9 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>Account.Contacts.npsp__Opportunities__r$CreatedDate</dateColumn>
-        <interval>INTERVAL_PREVQ</interval>
+        <dateColumn>Account.Contacts.npsp__Opportunities__r$CloseDate</dateColumn>
+        <endDate>2018-03-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-01-01</startDate>
     </timeFrameFilter>
 </Report>

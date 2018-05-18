@@ -4,7 +4,7 @@
         <field>Contact.Membership_ID__c</field>
     </columns>
     <columns>
-        <field>Contact.npo02__LastMembershipLevel__c</field>
+        <field>Contact.dlrs_Last_Membership_Level__c</field>
     </columns>
     <columns>
         <field>Account.npo02__LastMembershipLevel__c</field>
@@ -13,7 +13,7 @@
         <field>Account.Last_Payment_Date_all_stages__c</field>
     </columns>
     <columns>
-        <field>Contact.npo02__MembershipEndDate__c</field>
+        <field>Contact.dlrs_Membership_End_Date__c</field>
     </columns>
     <columns>
         <field>Account.npo02__MembershipEndDate__c</field>
@@ -90,7 +90,7 @@
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.npo02__LastMembershipLevel__c</column>
+            <column>Contact.dlrs_Last_Membership_Level__c</column>
             <operator>notEqual</operator>
             <value>Youth</value>
         </criteriaItems>

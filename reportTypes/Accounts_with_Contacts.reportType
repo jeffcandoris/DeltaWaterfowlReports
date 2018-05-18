@@ -192,6 +192,21 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>First_Opp_Amount_closed_won__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>First_Opp_Date_closed_won__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>First_Opp_Dept__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>npo02__Formal_Greeting__c</field>
             <table>Account</table>
         </columns>
@@ -228,6 +243,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>npo02__LargestAmount__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Largest_Opp_Amount_closed_won__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -273,6 +293,26 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedDate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Last_Opp_amount_closed_won__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Last_Opp_Date_closed_won__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Last_Payment_Amount_all_stages__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Last_Payment_Date_all_stages__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -537,6 +577,16 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Total_of_Opps_closed_won__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_of_Paid_Payments_all_stages__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>npo02__TotalOppAmount__c</field>
             <table>Account</table>
         </columns>
@@ -562,12 +612,37 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Total_Gross_Dollar_Units__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Gross_Payment_Units__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>npo02__TotalMembershipOppAmount__c</field>
             <table>Account</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>npo02__NumberOfClosedOpps__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Opp_Amount_all_stages__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Opp_Amount_closed_won__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Payment_Received_all_stages__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -1776,6 +1851,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Description</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Development_Team_Solicit__c</field>
             <table>Account.Contacts</table>
         </columns>
         <columns>

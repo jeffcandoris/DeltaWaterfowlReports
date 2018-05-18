@@ -35,9 +35,6 @@
         <field>STAGE_NAME</field>
     </columns>
     <columns>
-        <field>FULL_NAME</field>
-    </columns>
-    <columns>
         <field>CAMPAIGN_SOURCE</field>
     </columns>
     <columns>
@@ -52,7 +49,12 @@
             <value>dallas ducks 100</value>
         </criteriaItems>
     </filter>
-    <format>Tabular</format>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FULL_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>DD100</name>
     <params>
         <name>open</name>

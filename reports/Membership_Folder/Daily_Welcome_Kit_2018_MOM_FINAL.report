@@ -94,7 +94,7 @@
         <field>Opportunity$Benefit_Stats__c</field>
     </columns>
     <columns>
-        <field>Opportunity$Account.npo02__LastMembershipLevel__c</field>
+        <field>Opportunity$npsp__Primary_Contact__c.dlrs_Last_Membership_Level__c</field>
     </columns>
     <columns>
         <field>Opportunity$Intended_Amount__c</field>

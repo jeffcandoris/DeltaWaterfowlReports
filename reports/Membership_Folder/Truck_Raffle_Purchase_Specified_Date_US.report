@@ -40,7 +40,7 @@
         <field>Contact.Development_Team_Solicit__c</field>
     </columns>
     <columns>
-        <field>Contact.npo02__LastMembershipLevel__c</field>
+        <field>Contact.dlrs_Last_Membership_Level__c</field>
     </columns>
     <columns>
         <field>ADDRESS2_COUNTRY</field>

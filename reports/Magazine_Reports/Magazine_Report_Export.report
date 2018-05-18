@@ -19,6 +19,9 @@
         <field>SUFFIX</field>
     </columns>
     <columns>
+        <field>Contact.Formal_Greeting__c</field>
+    </columns>
+    <columns>
         <field>Account.npo02__Formal_Greeting__c</field>
     </columns>
     <columns>
@@ -46,10 +49,10 @@
         <field>ADDRESS2_COUNTRY</field>
     </columns>
     <columns>
-        <field>Contact.npo02__LastMembershipLevel__c</field>
+        <field>Contact.dlrs_Last_Membership_Level__c</field>
     </columns>
     <columns>
-        <field>Contact.npo02__MembershipEndDate__c</field>
+        <field>Contact.dlrs_Membership_End_Date__c</field>
     </columns>
     <currency>USD</currency>
     <filter>
@@ -63,7 +66,7 @@
     <name>Magazine Report - Export</name>
     <params>
         <name>scopeid</name>
-        <value>701360000007vZM</value>
+        <value>7013600000088gH</value>
     </params>
     <params>
         <name>co</name>

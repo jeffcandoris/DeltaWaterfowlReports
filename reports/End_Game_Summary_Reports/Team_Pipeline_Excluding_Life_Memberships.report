@@ -59,11 +59,6 @@
             <value>closed</value>
         </criteriaItems>
         <criteriaItems>
-            <column>TYPE</column>
-            <operator>notContain</operator>
-            <value>planned,property</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>RECORDTYPE</column>
             <operator>notEqual</operator>
             <value>Opportunity.Membership</value>

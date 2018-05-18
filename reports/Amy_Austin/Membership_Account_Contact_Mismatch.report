@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c.Account.Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account.BillingAddress</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npsp__Primary_Contact__c.MailingAddress</field>
+    </columns>
+    <columns>
+        <field>Opportunity$npe01__Membership_End_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CreatedDate</field>
+    </columns>
+    <currency>USD</currency>
+    <description>*FOR AMY* Use this report to identify membership opportunities that were entered under different Account Name/Primary Contact combinations.  Use instructional document titled &apos;Membership Account/Contact Mismatch&apos;.</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$RecordType</column>
+            <operator>equals</operator>
+            <value>Opportunity.Membership</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Membership Account/Contact Mismatch</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_Campaign_Fields_MbrshipData__c</reportType>
+    <roleHierarchyFilter>System_Administrator</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-02-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -12,11 +12,6 @@
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
-        <sharedTo>bleach@deltawaterfowl.org</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
         <sharedTo>cgottfredsen@deltawaterfowl.org</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
@@ -39,11 +34,6 @@
         <accessLevel>View</accessLevel>
         <sharedTo>Employee</sharedTo>
         <sharedToType>RoleAndSubordinates</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>ewebb@deltawaterfowl.org</sharedTo>
-        <sharedToType>CustomerPortalUser</sharedToType>
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>

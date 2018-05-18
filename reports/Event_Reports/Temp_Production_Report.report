@@ -9,7 +9,7 @@
         <criteriaItems>
             <column>CREATED</column>
             <operator>equals</operator>
-            <value>delon weisz,robyn engelstade</value>
+            <value>delon weisz,robyn engelstade,kyla mosbrucker,heidi fix</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED_DATE</column>

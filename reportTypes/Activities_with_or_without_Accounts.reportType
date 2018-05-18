@@ -803,7 +803,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.Total_of_Opps_closed_won__c</field>
+            <field>Account.dlrs_Total_of_Opps_closed_won__c</field>
             <table>Activity</table>
         </columns>
         <columns>
@@ -3464,6 +3464,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedBy.Contact.npe01__WorkPhone__c</field>
+            <table>Activity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>npsp__Engagement_Plan_Task__c.npsp__Type__c</field>
             <table>Activity</table>
         </columns>
         <masterLabel>Activities</masterLabel>

@@ -4,7 +4,7 @@
         <field>Contact.Membership_ID__c</field>
     </columns>
     <columns>
-        <field>Account.npo02__LastMembershipLevel__c</field>
+        <field>Contact.dlrs_Last_Membership_Level__c</field>
     </columns>
     <columns>
         <field>SALUTATION</field>
@@ -62,9 +62,9 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>Account.npo02__MembershipEndDate__c</dateColumn>
-        <endDate>2230-02-28</endDate>
+        <dateColumn>Contact.dlrs_Membership_End_Date__c</dateColumn>
+        <endDate>2230-04-30</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2017-09-01</startDate>
+        <startDate>2017-11-01</startDate>
     </timeFrameFilter>
 </Report>

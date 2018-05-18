@@ -40,10 +40,7 @@
         <field>Account.Last_Payment_Date_all_stages__c</field>
     </columns>
     <columns>
-        <field>Account.npo02__LastMembershipLevel__c</field>
-    </columns>
-    <columns>
-        <field>Contact.npo02__LastMembershipLevel__c</field>
+        <field>Contact.dlrs_Last_Membership_Level__c</field>
     </columns>
     <columns>
         <field>Contact.npsp__Deceased__c</field>
@@ -53,16 +50,11 @@
     </columns>
     <currency>USD</currency>
     <filter>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 7 AND (5 OR 6 OR 8)</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND 6 AND (4 OR 5 OR 7)</booleanFilter>
         <criteriaItems>
             <column>ADDRESS2_STATE</column>
             <operator>contains</operator>
-            <value>North Carolina,NC</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Account.npo02__LastMembershipLevel__c</column>
-            <operator>notEqual</operator>
-            <value>Youth</value>
+            <value>CT</value>
         </criteriaItems>
         <criteriaItems>
             <column>Contact.npsp__Deceased__c</column>
@@ -77,12 +69,12 @@
         <criteriaItems>
             <column>Account.Last_Payment_Date_all_stages__c</column>
             <operator>greaterOrEqual</operator>
-            <value>6/1/2016</value>
+            <value>9/1/2016</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.npo02__MembershipEndDate__c</column>
+            <column>Contact.dlrs_Membership_End_Date__c</column>
             <operator>greaterOrEqual</operator>
-            <value>6/1/2017</value>
+            <value>9/1/2017</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Primary_Contact_Email__c</column>
@@ -90,9 +82,9 @@
             <value>@</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.npo02__MembershipEndDate__c</column>
+            <column>Contact.dlrs_Membership_End_Date__c</column>
             <operator>greaterOrEqual</operator>
-            <value>6/1/2017</value>
+            <value>9/1/2017</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

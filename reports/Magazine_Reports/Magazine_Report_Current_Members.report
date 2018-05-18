@@ -13,7 +13,7 @@
         <field>TITLE</field>
     </columns>
     <columns>
-        <field>Contact.npo02__MembershipEndDate__c</field>
+        <field>Contact.dlrs_Membership_End_Date__c</field>
     </columns>
     <columns>
         <field>ADDRESS2_STREET</field>
@@ -71,9 +71,9 @@
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.npo02__MembershipEndDate__c</column>
-            <operator>greaterThan</operator>
-            <value>10/1/2017</value>
+            <column>Contact.dlrs_Membership_End_Date__c</column>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2018</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

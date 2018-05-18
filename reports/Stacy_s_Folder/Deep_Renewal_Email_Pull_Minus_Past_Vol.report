@@ -39,12 +39,6 @@
     <columns>
         <field>Account.Primary_Contact_Email__c</field>
     </columns>
-    <columns>
-        <field>Account.npo02__MembershipEndDate__c</field>
-    </columns>
-    <columns>
-        <field>Account.npo02__LastMembershipLevel__c</field>
-    </columns>
     <crossFilters>
         <criteriaItems>
             <column>Long_Code__c</column>
@@ -58,14 +52,14 @@
     </crossFilters>
     <crossFilters>
         <criteriaItems>
-            <column>Name</column>
+            <column>npe5__Status__c</column>
             <operator>equals</operator>
-            <value>volunteer - past</value>
+            <value>Current,Former</value>
         </criteriaItems>
         <operation>without</operation>
         <primaryTableColumn>CONTACT_ID</primaryTableColumn>
-        <relatedTable>Attribute__c</relatedTable>
-        <relatedTableJoinColumn>Contact__c</relatedTableJoinColumn>
+        <relatedTable>npe5__Affiliation__c</relatedTable>
+        <relatedTableJoinColumn>npe5__Contact__c</relatedTableJoinColumn>
     </crossFilters>
     <currency>USD</currency>
     <description>Minus past volunteers - to pull them out into a separate list change w/o to with</description>
@@ -96,11 +90,6 @@
             <value>@</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.npo02__LastMembershipLevel__c</column>
-            <operator>notContain</operator>
-            <value>youth</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>ADDRESS2_COUNTRY</column>
             <operator>contains</operator>
             <value>States</value>
@@ -109,6 +98,11 @@
             <column>Contact.Exclude_From_Mailings__c</column>
             <operator>equals</operator>
             <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.dlrs_Last_Membership_Level__c</column>
+            <operator>notContain</operator>
+            <value>youth</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -121,7 +115,7 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>Account.npo02__MembershipEndDate__c</dateColumn>
+        <dateColumn>Contact.dlrs_Membership_End_Date__c</dateColumn>
         <endDate>2017-10-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2013-01-01</startDate>

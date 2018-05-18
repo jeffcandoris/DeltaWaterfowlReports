@@ -47,14 +47,19 @@
     </columns>
     <crossFilters>
         <criteriaItems>
-            <column>CloseDate</column>
+            <column>Last_Payment_Date__c</column>
             <operator>greaterOrEqual</operator>
-            <value>10/1/2016</value>
+            <value>1/1/2017</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RecordType</column>
+            <operator>notEqual</operator>
+            <value>Opportunity.Ticket_Order,Opportunity.Merchandise</value>
         </criteriaItems>
         <operation>with</operation>
         <primaryTableColumn>CONTACT_ID</primaryTableColumn>
-        <relatedTable>OCR-Opportunity</relatedTable>
-        <relatedTableJoinColumn>Contact</relatedTableJoinColumn>
+        <relatedTable>Opportunity</relatedTable>
+        <relatedTableJoinColumn>npsp__Primary_Contact__c</relatedTableJoinColumn>
     </crossFilters>
     <currency>USD</currency>
     <filter>

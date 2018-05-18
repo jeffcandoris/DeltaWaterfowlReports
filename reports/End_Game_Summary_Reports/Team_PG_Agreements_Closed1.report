@@ -60,8 +60,8 @@
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
-            <operator>notContain</operator>
-            <value>Closed Won - 100%</value>
+            <operator>contains</operator>
+            <value>written,closed</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

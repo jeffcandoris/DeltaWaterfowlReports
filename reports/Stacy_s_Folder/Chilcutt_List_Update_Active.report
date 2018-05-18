@@ -46,13 +46,7 @@
         <field>ADDRESS2_COUNTRY</field>
     </columns>
     <columns>
-        <field>Contact.npo02__LastMembershipLevel__c</field>
-    </columns>
-    <columns>
-        <field>Account.npo02__LastMembershipLevel__c</field>
-    </columns>
-    <columns>
-        <field>Account.npo02__MembershipEndDate__c</field>
+        <field>Contact.dlrs_Last_Membership_Level__c</field>
     </columns>
     <currency>USD</currency>
     <filter>
@@ -82,11 +76,6 @@
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.npo02__LastMembershipLevel__c</column>
-            <operator>notEqual</operator>
-            <value>Youth</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>ADDRESS2_COUNTRY</column>
             <operator>contains</operator>
             <value>States</value>
@@ -102,9 +91,9 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>Account.npo02__MembershipEndDate__c</dateColumn>
+        <dateColumn>Contact.Membership_End_Date__c</dateColumn>
         <endDate>3208-02-29</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2017-09-01</startDate>
+        <startDate>2017-11-01</startDate>
     </timeFrameFilter>
 </Report>

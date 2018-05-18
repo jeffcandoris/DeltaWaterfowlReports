@@ -599,6 +599,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Account</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>npsp__Acknowledgment_Date__c</field>
             <table>Account.Opportunities</table>
         </columns>
@@ -704,6 +709,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Expected_Revenue_Units__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>ExpectedRevenue</field>
             <table>Account.Opportunities</table>
         </columns>
@@ -750,6 +760,16 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>npsp__Grant_Requirements_Website__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Gross_Dollar_Units__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Gross_Payment_Units__c</field>
             <table>Account.Opportunities</table>
         </columns>
         <columns>
@@ -815,6 +835,16 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedDate</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Last_Payment_Amount__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Last_Payment_Date__c</field>
             <table>Account.Opportunities</table>
         </columns>
         <columns>
@@ -905,6 +935,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>NextStep</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Non_Budget_Relieving__c</field>
             <table>Account.Opportunities</table>
         </columns>
         <columns>
@@ -1124,6 +1159,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Shipping_Date__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>StageName</field>
             <table>Account.Opportunities</table>
         </columns>
@@ -1134,7 +1174,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Sum_of_Payments_in_Specified_Range__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Tax__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Tracking_Number__c</field>
             <table>Account.Opportunities</table>
         </columns>
         <columns>
@@ -1154,12 +1204,22 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Validated_Date__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>IsWon</field>
             <table>Account.Opportunities</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Years__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Web_Order_Number__c</field>
             <table>Account.Opportunities</table>
         </columns>
         <masterLabel>Opportunities</masterLabel>

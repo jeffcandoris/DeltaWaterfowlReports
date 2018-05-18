@@ -29,7 +29,7 @@
         <criteriaItems>
             <column>Opportunity$Campaign</column>
             <operator>contains</operator>
-            <value>41202 - 2017 M1,41203 - 2017 M2,Ducks-Unknown</value>
+            <value>41202 - 2018 M1,41203 - 2018 M2,Ducks-Unknown</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -44,8 +44,8 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>Opportunity$CloseDate</dateColumn>
-        <endDate>2017-11-25</endDate>
+        <endDate>2018-04-14</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2017-03-20</startDate>
+        <startDate>2018-03-18</startDate>
     </timeFrameFilter>
 </Report>

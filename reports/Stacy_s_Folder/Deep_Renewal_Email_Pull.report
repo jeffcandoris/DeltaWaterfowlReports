@@ -39,12 +39,6 @@
     <columns>
         <field>Account.Primary_Contact_Email__c</field>
     </columns>
-    <columns>
-        <field>Account.npo02__MembershipEndDate__c</field>
-    </columns>
-    <columns>
-        <field>Account.npo02__LastMembershipLevel__c</field>
-    </columns>
     <crossFilters>
         <criteriaItems>
             <column>Long_Code__c</column>
@@ -84,11 +78,6 @@
             <value>@</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.npo02__LastMembershipLevel__c</column>
-            <operator>notContain</operator>
-            <value>youth</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>ADDRESS2_COUNTRY</column>
             <operator>contains</operator>
             <value>States</value>
@@ -97,6 +86,11 @@
             <column>Contact.Exclude_From_Mailings__c</column>
             <operator>equals</operator>
             <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.dlrs_Last_Membership_Level__c</column>
+            <operator>notContain</operator>
+            <value>youth</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -109,7 +103,7 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>Account.npo02__MembershipEndDate__c</dateColumn>
+        <dateColumn>Contact.dlrs_Membership_End_Date__c</dateColumn>
         <endDate>2017-10-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2013-01-01</startDate>
