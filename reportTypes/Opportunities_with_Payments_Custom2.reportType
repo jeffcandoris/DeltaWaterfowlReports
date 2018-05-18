@@ -262,7 +262,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Last_Payment_Date__c</field>
+            <field>Last_Payment_Date2__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -1077,7 +1077,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npsp__Primary_Contact__c.dlrs_Last_Membership_Amount__c</field>
+            <field>npsp__Primary_Contact__c.Last_Membership_Amount__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -1092,7 +1092,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npsp__Primary_Contact__c.dlrs_Last_Membership_Date__c</field>
+            <field>npsp__Primary_Contact__c.Last_Membership_Date__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -1112,7 +1112,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npsp__Primary_Contact__c.dlrs_Last_Membership_Level__c</field>
+            <field>npsp__Primary_Contact__c.Last_Membership_Level__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -1127,7 +1127,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npsp__Primary_Contact__c.dlrs_Last_Membership_Origin__c</field>
+            <field>npsp__Primary_Contact__c.Last_Membership_Origin__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -1252,7 +1252,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npsp__Primary_Contact__c.dlrs_Membership_Join_Date__c</field>
+            <field>npsp__Primary_Contact__c.Membership_Join_Date__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -2172,7 +2172,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.npe01__One2OneContact__c.dlrs_Last_Membership_Amount__c</field>
+            <field>Account.npe01__One2OneContact__c.Last_Membership_Amount__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -2187,7 +2187,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.npe01__One2OneContact__c.dlrs_Last_Membership_Date__c</field>
+            <field>Account.npe01__One2OneContact__c.Last_Membership_Date__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -2207,7 +2207,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.npe01__One2OneContact__c.dlrs_Last_Membership_Level__c</field>
+            <field>Account.npe01__One2OneContact__c.Last_Membership_Level__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -2222,7 +2222,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.npe01__One2OneContact__c.dlrs_Last_Membership_Origin__c</field>
+            <field>Account.npe01__One2OneContact__c.Last_Membership_Origin__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -2377,7 +2377,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.npe01__One2OneContact__c.dlrs_Membership_Join_Date__c</field>
+            <field>Account.npe01__One2OneContact__c.Membership_Join_Date__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>

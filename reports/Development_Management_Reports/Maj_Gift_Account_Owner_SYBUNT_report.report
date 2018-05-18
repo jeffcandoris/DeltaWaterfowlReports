@@ -4,7 +4,7 @@
         <field>Account$Name</field>
     </columns>
     <columns>
-        <field>Account.Last_Payment_Date_all_stages_2__c</field>
+        <field>Account$Last_Payment_Date_all_stages_2__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>

@@ -902,12 +902,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.First_Opp_Date_closed_won__c</field>
+            <field>Account.First_Opportunity_Date__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.Last_Opp_Date_closed_won__c</field>
+            <field>Account.Last_Opportunity_Date__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -927,7 +927,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npsp__Primary_Contact__c.dlrs_Last_Membership_Level__c</field>
+            <field>npsp__Primary_Contact__c.Last_Membership_Level__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>

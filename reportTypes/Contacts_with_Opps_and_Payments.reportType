@@ -1244,7 +1244,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Last_Payment_Date__c</field>
+            <field>Last_Payment_Date2__c</field>
             <table>Contact.OpportunityContactRoles</table>
         </columns>
         <columns>

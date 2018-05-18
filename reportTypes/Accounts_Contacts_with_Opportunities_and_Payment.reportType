@@ -225,7 +225,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>First_Opp_Date_closed_won__c</field>
+            <field>First_Opportunity_Date__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -330,7 +330,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Last_Opp_Date_closed_won__c</field>
+            <field>Last_Opportunity_Date__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -340,7 +340,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Last_Payment_Date_all_stages__c</field>
+            <field>Last_Payment_Date_all_stages_2__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -655,22 +655,22 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>dlrs_Total_of_Opps_closed_won__c</field>
+            <field>Total_Num_of_Opps_closed_won__c</field>
             <table>Account</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Total_of_Paid_Payments_all_stages__c</field>
+            <field>Total_Num_of_Paid_Payments_all_stages__c</field>
             <table>Account</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Total_Opp_Amount_all_stages__c</field>
+            <field>Total_Opportunity_all_stages__c</field>
             <table>Account</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Total_Opp_Amount_closed_won__c</field>
+            <field>Total_Opportunity_closed_won__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -868,7 +868,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>dlrs_Last_Membership_Level__c</field>
+            <field>Last_Membership_Level__c</field>
             <table>Account.Contacts</table>
         </columns>
         <columns>
@@ -908,7 +908,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>dlrs_Membership_Join_Date__c</field>
+            <field>Membership_Join_Date__c</field>
             <table>Account.Contacts</table>
         </columns>
         <columns>
@@ -923,7 +923,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>dlrs_Last_Membership_Origin__c</field>
+            <field>Last_Membership_Origin__c</field>
             <table>Account.Contacts</table>
         </columns>
         <columns>
@@ -938,7 +938,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>dlrs_Last_Membership_Amount__c</field>
+            <field>Last_Membership_Amount__c</field>
             <table>Account.Contacts</table>
         </columns>
         <columns>
@@ -968,7 +968,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>dlrs_Last_Membership_Date__c</field>
+            <field>Last_Membership_Date__c</field>
             <table>Account.Contacts</table>
         </columns>
         <columns>
@@ -2056,7 +2056,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Last_Payment_Date__c</field>
+            <field>Last_Payment_Date2__c</field>
             <table>Account.Contacts.npsp__Opportunities__r</table>
         </columns>
         <columns>

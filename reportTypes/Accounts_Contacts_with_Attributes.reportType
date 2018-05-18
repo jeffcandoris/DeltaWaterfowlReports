@@ -656,7 +656,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Last_Payment_Date_all_stages__c</field>
+            <field>Last_Payment_Date_all_stages_2__c</field>
             <table>Account</table>
         </columns>
         <masterLabel>Accounts</masterLabel>
