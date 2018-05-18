@@ -33,7 +33,7 @@
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Last_Payment_Date_all_stages_2__c</column>
+            <column>Account$Last_Payment_Date_all_stages_2__c</column>
             <operator>greaterOrEqual</operator>
             <value>10/1/2015</value>
         </criteriaItems>

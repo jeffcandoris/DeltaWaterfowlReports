@@ -1082,11 +1082,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npsp__Primary_Contact__c.Last_Membership_Amount__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>npsp__Primary_Contact__c.npo02__LastMembershipDate__c</field>
             <table>Opportunity</table>
         </columns>
@@ -2168,11 +2163,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.npe01__One2OneContact__c.npo02__LastMembershipAmount__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Account.npe01__One2OneContact__c.Last_Membership_Amount__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>

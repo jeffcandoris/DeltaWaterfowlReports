@@ -223,11 +223,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Last_Membership_Amount__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Mailing_Street_2__c</field>
             <table>Contact</table>
         </columns>
