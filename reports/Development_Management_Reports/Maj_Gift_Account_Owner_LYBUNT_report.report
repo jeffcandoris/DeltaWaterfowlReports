@@ -4,7 +4,7 @@
         <field>Account$Name</field>
     </columns>
     <columns>
-        <field>Account.Last_Payment_Date_all_stages_2__c</field>
+        <field>Account$Last_Payment_Date_all_stages_2__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
@@ -71,7 +71,7 @@
     <sortColumn>Account.Opportunities.npe01__OppPayment__r$npe01__Payment_Amount__c</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>Account.Last_Payment_Date_all_stages_2__c</dateColumn>
+        <dateColumn>Account$Last_Payment_Date_all_stages_2__c</dateColumn>
         <interval>INTERVAL_PREVY</interval>
     </timeFrameFilter>
 </Report>
