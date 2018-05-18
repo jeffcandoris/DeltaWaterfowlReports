@@ -1894,11 +1894,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npsp__Primary_Contact__c.Last_Membership_Date__c</field>
-            <table>Account.Opportunities</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>npsp__Primary_Contact__c.Membership_End_Date__c</field>
             <table>Account.Opportunities</table>
         </columns>

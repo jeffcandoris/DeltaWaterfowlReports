@@ -1712,11 +1712,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.Total_Num_of_Paid_Payments_all_stages__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Account.npo02__TotalOppAmount__c</field>
             <table>Contact</table>
         </columns>

@@ -1113,11 +1113,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npe01__One2OneContact__c.Last_Membership_Date__c</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>npe01__One2OneContact__c.npo02__LastMembershipLevel__c</field>
             <table>Account</table>
         </columns>
