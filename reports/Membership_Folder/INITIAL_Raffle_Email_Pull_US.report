@@ -40,22 +40,13 @@
         <field>Account.Primary_Contact_Email__c</field>
     </columns>
     <columns>
-        <field>Account.npo02__LastMembershipLevel__c</field>
-    </columns>
-    <columns>
         <field>Contact.dlrs_Membership_End_Date__c</field>
-    </columns>
-    <columns>
-        <field>Account.npo02__MembershipEndDate__c</field>
     </columns>
     <columns>
         <field>Account.Last_Payment_Date_all_stages__c</field>
     </columns>
     <columns>
         <field>Contact.dlrs_Membership_Join_Date__c</field>
-    </columns>
-    <columns>
-        <field>Account.npo02__MembershipJoinDate__c</field>
     </columns>
     <crossFilters>
         <criteriaItems>
@@ -71,7 +62,7 @@
     <currency>USD</currency>
     <description>Use this list to pull the initial raffle list to send to Pardot.  Contains donors within the last 24 months and/or active members.</description>
     <filter>
-        <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10) AND (11 or 12)</booleanFilter>
+        <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 and 12) AND (10 or 11)</booleanFilter>
         <criteriaItems>
             <column>Contact.Exclude_From_Mailings__c</column>
             <operator>equals</operator>
@@ -108,11 +99,6 @@
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.npo02__LastMembershipLevel__c</column>
-            <operator>notEqual</operator>
-            <value>Youth</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>ADDRESS2_COUNTRY</column>
             <operator>contains</operator>
             <value>States</value>
@@ -132,6 +118,11 @@
             <operator>greaterOrEqual</operator>
             <value>TODAY</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Contact.dlrs_Last_Membership_Level__c</column>
+            <operator>notEqual</operator>
+            <value>youth</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>INITIAL Raffle Email Pull - US</name>
@@ -142,8 +133,6 @@
     <reportType>ContactList</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Account.npo02__MembershipEndDate__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

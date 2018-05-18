@@ -51,6 +51,21 @@
             <operator>equals</operator>
             <value>First Hunt Mem</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts$Do_Not_Solicit__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts$Exclude_From_Mailings__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts$No_Valid_Address__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>First Hunt Acknowledgement Letter</name>
@@ -61,6 +76,8 @@
     <reportType>Accounts_Contacts_with_Opportunities_and_Payment__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
+    <sortColumn>Account$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

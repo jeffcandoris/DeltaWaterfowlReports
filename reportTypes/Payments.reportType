@@ -703,7 +703,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npe01__Opportunity__c.Account.Total_of_Opps_closed_won__c</field>
+            <field>npe01__Opportunity__c.Account.dlrs_Total_of_Opps_closed_won__c</field>
             <table>npe01__OppPayment__c</table>
         </columns>
         <columns>

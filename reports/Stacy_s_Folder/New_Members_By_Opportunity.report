@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>Account.npo02__MembershipJoinDate__c</field>
-    </columns>
-    <columns>
         <field>Opportunity.Department__c</field>
     </columns>
     <columns>
@@ -38,9 +35,9 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>Account.npo02__MembershipJoinDate__c</dateColumn>
-        <endDate>2018-02-28</endDate>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2018-04-30</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2018-02-01</startDate>
+        <startDate>2018-04-01</startDate>
     </timeFrameFilter>
 </Report>

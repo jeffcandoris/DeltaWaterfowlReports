@@ -10,9 +10,6 @@
         <field>Contact.dlrs_Membership_End_Date__c</field>
     </columns>
     <columns>
-        <field>Account.npo02__MembershipEndDate__c</field>
-    </columns>
-    <columns>
         <field>Contact.First_Opp_Date__c</field>
     </columns>
     <columns>
@@ -48,7 +45,7 @@
     <currency>USD</currency>
     <description>This report captures all active members and donors w/in the past 18 months that have an email on file.  For Canada only.</description>
     <filter>
-        <booleanFilter>((1 AND 2 AND 3 and 6) AND (4 or 5))</booleanFilter>
+        <booleanFilter>(1 AND 2 AND 3 AND 4) AND (5 or 6)</booleanFilter>
         <criteriaItems>
             <column>Account.Primary_Contact_Email__c</column>
             <operator>contains</operator>
@@ -65,19 +62,19 @@
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
+            <column>ADDRESS2_COUNTRY</column>
+            <operator>equals</operator>
+            <value>canada</value>
+        </criteriaItems>
+        <criteriaItems>
             <column>Account.Last_Payment_Date_all_stages__c</column>
             <operator>equals</operator>
             <value>LAST_N_DAYS:548</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.npo02__MembershipEndDate__c</column>
+            <column>Contact.dlrs_Membership_End_Date__c</column>
             <operator>greaterOrEqual</operator>
-            <value>TODAY</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>ADDRESS2_COUNTRY</column>
-            <operator>contains</operator>
-            <value>can</value>
+            <value>LAST_N_DAYS:180</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

@@ -105,6 +105,21 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Billing_Street_1__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Billing_Street_2__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Billing_Street_3__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>BillingCity</field>
             <table>Account</table>
         </columns>
@@ -141,6 +156,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>BillingPostalCode</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Chapter_Chair__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -316,6 +336,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Last_Payment_Date_all_stages__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Last_Payment_Amount_all_stages__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -610,7 +635,27 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Total_Gross_Dollar_Units__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Gross_Payment_Units__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>npo02__TotalMembershipOppAmount__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_of_Paid_Payments_all_stages__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Total_of_Opps_closed_won__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -978,6 +1023,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Informal_Salutation__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>npo02__LargestAmount__c</field>
             <table>Account.Contacts</table>
         </columns>
@@ -1013,6 +1063,16 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Last_Membership_Origin__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Last_Membership_Level__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>npo02__LastOppAmount__c</field>
             <table>Account.Contacts</table>
         </columns>
@@ -1034,6 +1094,16 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>npo02__LastMembershipDate__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Last_Membership_Amount__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Last_Membership_Date__c</field>
             <table>Account.Contacts</table>
         </columns>
         <columns>
@@ -1073,6 +1143,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Use_Nickname__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>npsp__Last_Soft_Credit_Date__c</field>
             <table>Account.Contacts</table>
         </columns>
@@ -1093,6 +1168,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Mailing_Street_1__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>MailingAddress</field>
             <table>Account.Contacts</table>
         </columns>
@@ -1103,12 +1183,42 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Mailing_Street_3__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Total_Membership_Amount__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Membership_End_Date__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>MailingCountry</field>
             <table>Account.Contacts</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>MailingGeocodeAccuracy</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Number_of_Memberships__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Membership_Join_Date__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Mailing_Street_2__c</field>
             <table>Account.Contacts</table>
         </columns>
         <columns>
@@ -2330,6 +2440,11 @@
         <columns>
             <checkedByDefault>true</checkedByDefault>
             <field>Name</field>
+            <table>Account.Contacts.npsp__Opportunities__r.npe01__OppPayment__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Payment_Units__c</field>
             <table>Account.Contacts.npsp__Opportunities__r.npe01__OppPayment__r</table>
         </columns>
         <columns>

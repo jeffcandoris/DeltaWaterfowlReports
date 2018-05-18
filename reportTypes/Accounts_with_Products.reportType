@@ -676,7 +676,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Total_of_Opps_closed_won__c</field>
+            <field>dlrs_Total_of_Opps_closed_won__c</field>
             <table>Account</table>
         </columns>
         <columns>

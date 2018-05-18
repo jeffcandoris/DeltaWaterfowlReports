@@ -69,8 +69,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account.Contacts.npsp__Opportunities__r.npe01__OppPayment__r$npe01__Payment_Date__c</dateColumn>
-        <endDate>2018-01-31</endDate>
+        <endDate>2018-04-30</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2018-01-01</startDate>
+        <startDate>2018-04-01</startDate>
     </timeFrameFilter>
 </Report>

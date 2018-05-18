@@ -32,6 +32,11 @@
             <operator>equals</operator>
             <value>Account.Chapter</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <operator>equals</operator>
+            <value>Quad city</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>All Affiliated Volunteers</name>

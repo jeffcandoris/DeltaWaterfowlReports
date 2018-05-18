@@ -2302,7 +2302,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.Total_of_Opps_closed_won__c</field>
+            <field>Account.dlrs_Total_of_Opps_closed_won__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>

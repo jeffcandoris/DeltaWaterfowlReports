@@ -34,8 +34,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Opportunity$CloseDate</dateColumn>
-        <endDate>2018-02-24</endDate>
+        <endDate>2018-05-12</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2017-08-13</startDate>
+        <startDate>2018-03-04</startDate>
     </timeFrameFilter>
 </Report>

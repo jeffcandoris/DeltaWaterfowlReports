@@ -48,8 +48,8 @@
     <crossFilters>
         <criteriaItems>
             <column>CloseDate</column>
-            <operator>greaterOrEqual</operator>
-            <value>11/1/2013</value>
+            <operator>equals</operator>
+            <value>LAST_N_DAYS:1460</value>
         </criteriaItems>
         <criteriaItems>
             <column>Letter_Code__c</column>
@@ -62,9 +62,8 @@
         <relatedTableJoinColumn>npsp__Primary_Contact__c</relatedTableJoinColumn>
     </crossFilters>
     <currency>USD</currency>
-    <description>Use this report to pull any US raffle purchases in a given time frame WITH EMAIL ADDRESSES.  Change the Close Date filter field as needed.</description>
+    <description>Use this report to pull any US raffle purchases in a given time frame WITH EMAIL ADDRESSES.</description>
     <filter>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10</booleanFilter>
         <criteriaItems>
             <column>Contact.Exclude_From_Mailings__c</column>
             <operator>equals</operator>
@@ -111,7 +110,7 @@
             <value>@</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.npo02__LastMembershipLevel__c</column>
+            <column>Contact.dlrs_Last_Membership_Level__c</column>
             <operator>notEqual</operator>
             <value>youth</value>
         </criteriaItems>

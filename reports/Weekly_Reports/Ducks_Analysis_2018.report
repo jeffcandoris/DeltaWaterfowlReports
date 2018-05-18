@@ -35,7 +35,7 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>Opportunity$CloseDate</dateColumn>
-        <endDate>2018-03-24</endDate>
+        <endDate>2018-05-12</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2018-03-18</startDate>
     </timeFrameFilter>

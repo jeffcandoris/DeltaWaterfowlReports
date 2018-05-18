@@ -335,6 +335,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Last_Payment_Amount_all_stages__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Last_Payment_Date_all_stages__c</field>
             <table>Account</table>
         </columns>
@@ -630,6 +635,16 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Total_Gross_Dollar_Units__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Gross_Payment_Units__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>npo02__TotalMembershipOppAmount__c</field>
             <table>Account</table>
         </columns>
@@ -640,7 +655,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Total_of_Opps_closed_won__c</field>
+            <field>dlrs_Total_of_Opps_closed_won__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -853,6 +868,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Last_Membership_Level__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Do_Not_Solicit__c</field>
             <table>Account.Contacts</table>
         </columns>
@@ -883,12 +903,52 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Total_Membership_Amount__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Membership_Join_Date__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>npsp__Exclude_from_Household_Formal_Greeting__c</field>
             <table>Account.Contacts</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Membership_End_Date__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Last_Membership_Origin__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Auto_Membership_Id__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>npsp__Exclude_from_Household_Informal_Greeting__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Last_Membership_Amount__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Mailing_Address_Text__c</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Number_of_Memberships__c</field>
             <table>Account.Contacts</table>
         </columns>
         <columns>
@@ -904,6 +964,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Fax</field>
+            <table>Account.Contacts</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Last_Membership_Date__c</field>
             <table>Account.Contacts</table>
         </columns>
         <columns>

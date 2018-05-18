@@ -45,9 +45,6 @@
     <columns>
         <field>ADDRESS2_COUNTRY</field>
     </columns>
-    <columns>
-        <field>Account.npo02__LastMembershipLevel__c</field>
-    </columns>
     <currency>USD</currency>
     <description>They need 38,000 names each time - not including CAN &amp; Yth</description>
     <filter>
@@ -102,9 +99,9 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>Account.npo02__MembershipEndDate__c</dateColumn>
-        <endDate>2018-10-31</endDate>
+        <dateColumn>Contact.dlrs_Membership_End_Date__c</dateColumn>
+        <endDate>2019-02-28</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-09-01</startDate>
+        <startDate>2017-01-01</startDate>
     </timeFrameFilter>
 </Report>

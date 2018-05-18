@@ -8,12 +8,12 @@
         <criteriaItems>
             <column>CREATED</column>
             <operator>equals</operator>
-            <value>delon weisz,robyn engelstade,stacy pollestad,julie lagro,amy austin,nicole anderson</value>
+            <value>delon weisz,robyn engelstade,stacy pollestad,julie lagro,amy austin,nicole anderson,heidi fix</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED_DATE</column>
             <operator>greaterOrEqual</operator>
-            <value>2/18/2018 12:00 AM</value>
+            <value>5/6/2018 12:00 AM</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

@@ -52,9 +52,6 @@
         <field>Contact.dlrs_Membership_End_Date__c</field>
     </columns>
     <columns>
-        <field>Account.npo02__LastMembershipLevel__c</field>
-    </columns>
-    <columns>
         <field>Contact.pi__pardot_hard_bounced__c</field>
     </columns>
     <columns>
@@ -92,7 +89,7 @@
     <currency>USD</currency>
     <description>Use this list to pull scheduled (subsequent) raffle list to send to Pardot.  Contains donors and new members added since the last pull, but removes any that are new in the last 6 weeks.</description>
     <filter>
-        <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11) AND ((12 AND 13) or (14 AND 15))</booleanFilter>
+        <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 and 16) AND ((12 AND 13) or (14 AND 15))</booleanFilter>
         <criteriaItems>
             <column>Contact.Exclude_From_Mailings__c</column>
             <operator>equals</operator>
@@ -129,11 +126,6 @@
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.npo02__LastMembershipLevel__c</column>
-            <operator>notEqual</operator>
-            <value>Youth</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>ADDRESS2_COUNTRY</column>
             <operator>contains</operator>
             <value>States</value>
@@ -167,6 +159,16 @@
             <column>Contact.dlrs_Membership_Join_Date__c</column>
             <operator>lessThan</operator>
             <value>LAST_N_WEEKS:6</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.dlrs_Membership_End_Date__c</column>
+            <operator>greaterOrEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.dlrs_Last_Membership_Level__c</column>
+            <operator>notContain</operator>
+            <value>youth</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

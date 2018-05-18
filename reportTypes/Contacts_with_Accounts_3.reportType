@@ -123,6 +123,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Mailing_Street_3__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>npsp__Current_Address__c</field>
             <table>Contact</table>
         </columns>
@@ -154,6 +159,16 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>npsp__Do_Not_Contact__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Informal_Salutation__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Formal_Greeting__c</field>
             <table>Contact</table>
         </columns>
         <columns>
@@ -193,7 +208,42 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Last_Membership__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>npsp__Exclude_from_Household_Informal_Greeting__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>First_Membership__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Last_Membership_Amount__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Mailing_Street_2__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Mailing_Street_1__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>dlrs_Last_Membership_Amount__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Development_Team_Solicit__c</field>
             <table>Contact</table>
         </columns>
         <columns>
@@ -204,6 +254,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Exclude_From_Mailings__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>First_Opp_Amount__c</field>
             <table>Contact</table>
         </columns>
         <columns>
@@ -974,6 +1029,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>npe01__WorkPhone__c</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Account.Owner</field>
             <table>Contact</table>
         </columns>
         <masterLabel>Contacts</masterLabel>

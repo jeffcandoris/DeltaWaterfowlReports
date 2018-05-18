@@ -47,6 +47,8 @@
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Activity$ActivityDate</dateColumn>
-        <interval>INTERVAL_CURFY</interval>
+        <endDate>2018-04-06</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-03-19</startDate>
     </timeFrameFilter>
 </Report>

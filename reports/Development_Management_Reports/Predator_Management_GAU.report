@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity.npsp__Allocations__r$npsp__General_Accounting_Unit__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.npsp__Allocations__r$npsp__Amount__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Predator Management General Account Units</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.npsp__Allocations__r$npsp__General_Accounting_Unit__c</column>
+            <operator>contains</operator>
+            <value>predator</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Predator Management GAU</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_GAU_Allocations__c</reportType>
+    <roleHierarchyFilter>System_Administrator</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-01-01</startDate>
+    </timeFrameFilter>
+</Report>

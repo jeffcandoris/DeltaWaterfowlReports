@@ -40,12 +40,6 @@
         <field>Account.npo02__LastCloseDate__c</field>
     </columns>
     <columns>
-        <field>Account.npo02__LastMembershipLevel__c</field>
-    </columns>
-    <columns>
-        <field>Account.npo02__LastMembershipDate__c</field>
-    </columns>
-    <columns>
         <field>Contact.npsp__Deceased__c</field>
     </columns>
     <columns>
@@ -67,12 +61,12 @@
         <criteriaItems>
             <column>Account.npo02__LastCloseDate__c</column>
             <operator>greaterOrEqual</operator>
-            <value>11/1/2015</value>
+            <value>9/1/2016</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.npo02__LastMembershipDate__c</column>
+            <column>Contact.dlrs_Membership_End_Date__c</column>
             <operator>greaterOrEqual</operator>
-            <value>11/1/2015</value>
+            <value>9/1/2017</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

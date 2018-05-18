@@ -54,7 +54,7 @@
         <criteriaItems>
             <column>Contact.OpportunityContactRoles$Name</column>
             <operator>equals</operator>
-            <value>Web 9/2/2017 Online Charges</value>
+            <value>3/12/2018 Online Charges</value>
         </criteriaItems>
         <criteriaItems>
             <column>Contact.OpportunityContactRoles*Opportunity$Letter_Code__c</column>
@@ -71,9 +71,11 @@
     <reportType>Contacts_with_Opps_and_Payments__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
+    <sortColumn>Contact.OpportunityContactRoles*Opportunity$Gift_Reference__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Contact.OpportunityContactRoles$CloseDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2017-08-01</startDate>
+        <startDate>2018-03-01</startDate>
     </timeFrameFilter>
 </Report>

@@ -4,6 +4,9 @@
         <field>ACCOUNT_RECORDTYPE</field>
     </columns>
     <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
         <field>SALUTATION</field>
     </columns>
     <columns>
@@ -42,22 +45,13 @@
     <columns>
         <field>EMAIL</field>
     </columns>
-    <columns>
-        <field>ACCOUNT.NAME</field>
-    </columns>
     <currency>USD</currency>
     <description>Generate mailing list for all major donor mailings</description>
     <filter>
-        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>OWNER_FULL_NAME</column>
             <operator>contains</operator>
-            <value>Lori,Jeff,John,Jason,Frank,Joel,Matt,Janice,Jim,Mallette,Scott</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Contact.Development_Team_Solicit__c</column>
-            <operator>notEqual</operator>
-            <value>0</value>
+            <value>Lori,Jeff,John,Jason,Frank,Joel,Matt,Janice,Jim,Mallette,Scott,martha</value>
         </criteriaItems>
         <criteriaItems>
             <column>Contact.npsp__Deceased__c</column>
@@ -79,8 +73,8 @@
     <reportType>ContactList</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>ACCOUNT_RECORDTYPE</sortColumn>
-    <sortOrder>Desc</sortOrder>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
