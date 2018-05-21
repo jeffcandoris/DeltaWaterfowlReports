@@ -1919,11 +1919,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npsp__Primary_Contact__c.Last_Membership_Origin__c</field>
-            <table>Account.Opportunities</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>npsp__Primary_Contact__c.LastModifiedBy</field>
             <table>Account.Opportunities</table>
         </columns>
