@@ -47,9 +47,6 @@
         <field>Opportunity$Account.First_Opp_Dept__c</field>
     </columns>
     <columns>
-        <field>Opportunity$npsp__Primary_Contact__c.Membership_End_Date__c</field>
-    </columns>
-    <columns>
         <field>Opportunity$npsp__Primary_Contact__c.Last_Membership_Level__c</field>
     </columns>
     <currency>USD</currency>
