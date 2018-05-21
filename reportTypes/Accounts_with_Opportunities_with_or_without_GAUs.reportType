@@ -696,11 +696,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Total_Opportunity_closed_won__c</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Largest_Opp_Amount_closed_won__c</field>
             <table>Account</table>
         </columns>
