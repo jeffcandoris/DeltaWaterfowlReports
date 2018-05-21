@@ -1288,11 +1288,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npe01__One2OneContact__c.Membership_Join_Date__c</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>npe01__One2OneContact__c.Auto_Membership_Id__c</field>
             <table>Account</table>
         </columns>
