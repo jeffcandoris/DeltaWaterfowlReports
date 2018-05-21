@@ -1767,11 +1767,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.Total_Opportunity_all_stages__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Account.Total_Opportunity_closed_won__c</field>
             <table>Contact</table>
         </columns>

@@ -1909,11 +1909,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npsp__Primary_Contact__c.Last_Membership_Level__c</field>
-            <table>Account.Opportunities</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>npsp__Primary_Contact__c.npo02__LastMembershipOrigin__c</field>
             <table>Account.Opportunities</table>
         </columns>
