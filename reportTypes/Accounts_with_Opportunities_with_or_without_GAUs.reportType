@@ -716,11 +716,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Last_Opportunity_Date__c</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Total_Opportunity_Dollars__c</field>
             <table>Account</table>
         </columns>

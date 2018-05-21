@@ -2177,11 +2177,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.npe01__One2OneContact__c.Last_Membership_Level__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Account.npe01__One2OneContact__c.npo02__LastMembershipOrigin__c</field>
             <table>Opportunity</table>
         </columns>
