@@ -1977,11 +1977,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.npe01__One2OneContact__c.Membership_Join_Date__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Account.npe01__One2OneContact__c.FirstName</field>
             <table>Opportunity</table>
         </columns>
