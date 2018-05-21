@@ -646,11 +646,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>First_Opportunity_Date__c</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Total_Num_of_Paid_Payments_all_stages__c</field>
             <table>Account</table>
         </columns>

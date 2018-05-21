@@ -1709,11 +1709,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npsp__Primary_Contact__c.Membership_Join_Date__c</field>
-            <table>Account.Opportunities</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>npsp__Primary_Contact__c.FirstName</field>
             <table>Account.Opportunities</table>
         </columns>
