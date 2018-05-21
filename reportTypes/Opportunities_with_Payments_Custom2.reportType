@@ -1117,11 +1117,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npsp__Primary_Contact__c.Last_Membership_Origin__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>npsp__Primary_Contact__c.LastModifiedBy</field>
             <table>Opportunity</table>
         </columns>
