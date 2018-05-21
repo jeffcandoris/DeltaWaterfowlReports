@@ -1133,11 +1133,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>npe01__One2OneContact__c.Last_Membership_Origin__c</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>npe01__One2OneContact__c.LastModifiedBy</field>
             <table>Account</table>
         </columns>
